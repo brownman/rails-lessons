@@ -1,0 +1,17 @@
+<frameset cols="225,*" rows="*" id="mainFrameset">
+<!--  scrolling="no" -->
+  <frame frameborder="0" id="frame_navigation" src="<%= url_for(:controller => 'main', :action => 'models') %>" name="frame_navigation"/>
+  <frame frameborder="0" id="frame_content" src="<%= url_for(:controller => 'main', :action => 'main') %>" name="frame_content" />
+     <noframes>
+     <body>
+         <p>RailsMyAdmin works best with a <b>frames-capable</b> browser.</p>
+     </body>
+ </noframes>
+</frameset>
+<script type="text/javascript" language="javascript">
+// <![CDATA[
+    var frame_content = window.frames[1];
+    var frame_navigation = window.frames[0];
+// ]]>
+</script>
+</html>

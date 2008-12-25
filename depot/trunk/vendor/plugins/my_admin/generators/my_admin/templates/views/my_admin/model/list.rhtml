@@ -1,0 +1,59 @@
+<%= render :partial => 'my_admin/main/includes' %>
+
+<h1>Listing <%= @klass_name + 's' %></h1>
+
+<table>
+  <tr>
+    <th></th>
+    <th></th>
+  <% for column in @klass.columns %>
+    <th><%= column.human_name %></th>
+  <% end %>
+  </tr>
+  
+<% for m in @models %>
+  <tr class="<%= cycle('even', 'odd'); %>" id="m-<%= m.id %>">
+    <td><%= link_to(image_tag('/my_admin/images/edit.png', :border => 'none'), :action => 'edit', :id => m, :model => @klass.to_s)%></td>
+    <td><%= ajax_link_confirm(image_tag('/my_admin/images/destroy.png', :border => 'none'), { :action => 'destroy', :id => m, :model => @klass.to_s }) %></td>
+    <% for column in @klass.columns %>
+      <% if column.type == :datetime %>
+      <td><%= nice_print(m.send(column.name)) %></td>
+      <% else %>
+        <% td_id = "field-#{m.id}-#{column.name}" %>
+        <td id="<%= td_id %>">
+          <%= editable_content(
+              :content => {
+                :element => 'span',
+                :text => m.send(column.name),
+                :options => {
+                  :id => "edit-#{m.id}-#{column.name}",
+                  :class => 'editable-content'
+                }
+               },
+              :url => {
+                :controller => 'model',
+                :action => 'in_place_update',
+                :id => m.id,
+                :model => @klass.to_s,
+                :field => column.name
+               },
+              :ajax => {
+                :okText => "'ok'",
+                :cancelText => "'cancel'"
+               }
+            ) %>
+        </td>
+      <% end %>
+    <% end %>
+  </tr>
+<% end %>
+</table>
+
+<% if controller.action_name != 'lookup' %>
+  <%= link_to 'Previous page', { :model => @klass.to_s, :page => @pages.current.previous } if @pages.current.previous %>
+  <%= link_to 'Next page', { :model => @klass.to_s, :page => @pages.current.next } if @pages.current.next %> 
+
+  <br/><br/>
+  <% new_img = image_tag('/my_admin/images/new.png', :border => 'none') %>
+  <%= link_to "#{new_img} New #{@klass_name}", :action => 'new', :model => @klass.to_s %>
+<% end %>

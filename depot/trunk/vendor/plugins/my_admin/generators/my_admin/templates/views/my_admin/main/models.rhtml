@@ -1,0 +1,29 @@
+<%= stylesheet_link_tag("/my_admin/my_admin") %>
+
+<style type="text/css">
+<!--
+body {background-color: #D2DCE5; width: 205px;}
+-->
+</style>
+
+<br/>
+<div style="margin-left: 10px; padding-bottom: 3px;">
+  <%= link_to(image_tag('/my_admin/images/home.png', :border => 'none'), url_for(:controller => 'main', :action => 'main'), :target => 'frame_content', :title => "View Dashboard") %>
+</div>
+<div id="navcontainer">
+  <center><b>Models</b></center>
+  <ul id="navlist">
+    <% @models.each do |m| %>
+      <li><%= link_to(m.to_s, url_for(:controller => 'model', :action => 'list', :model => m.to_s), :target => 'frame_content') %> (<%= m.count %>)</li>
+    <% end %>
+  </ul>
+</div>
+<center><small>(<a href="" target="frame_navigation">refresh</a>)</small></center>
+<% if @models.size > 20 %>
+  <div style="font-size: .8em; margin-left: 10px;">
+    <%= link_to(image_tag('/my_admin/images/home.png', :border => 'none'), url_for(:controller => 'main', :action => 'main'), :target => 'frame_content', :title => "View Dashboard") %>
+  </div>
+<% end %>
+<br/>
+
+<i>Powered by RailsMyAdmin</i>

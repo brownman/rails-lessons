@@ -1,0 +1,17 @@
+<h1>Pragmatic Books For Sale</h1>
+<% if @count_minimum_to_display %>
+	<p>You've been here <%= pluralize (@count, "time") -%>.</p>
+<% end  %>
+<% for product in @products %>
+	<div class="entry">
+		<%= link_to image_tag(product.image_url), :action => :add_to_cart, :id => product %>
+		<h3><%= h(product.title) %></h3>
+		<%= product.description %>
+		<span class="price">
+			<%= number_to_currency (product.price, :unit => "$", :separator => ".") %>
+		</span>
+		<% form_remote_tag :url => { :action => :add_to_cart, :id => product} do %>
+			<%= submit_tag "Add to Cart" %>
+		<% end -%>
+	</div>
+<% end %>

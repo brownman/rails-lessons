@@ -1,0 +1,8 @@
+<tr class="<%= cycle('even', 'odd'); %>" id="m-<%= @model.id %>">
+<% for column in @klass.columns %>
+  <% if column.type == :datetime %>
+  <td><%= nice_print(@model.send(column.name)) %></td>
+  <% else %>
+    <td><%=h @model.send(column.name) %></td>
+  <% end %>
+<% end %>

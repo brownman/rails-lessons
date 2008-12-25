@@ -1,0 +1,3 @@
+# MyAdmin
+class MyAdmin
+end

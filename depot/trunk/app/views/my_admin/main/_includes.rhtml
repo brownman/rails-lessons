@@ -1,0 +1,14 @@
+<%= javascript_include_tag :defaults %>
+<%= javascript_include_tag('/my_admin/my_admin') %>
+
+<%= stylesheet_link_tag('/my_admin/my_admin') %>
+
+<%= render :partial => 'my_admin/main/ajax' %>
+<% if flash[:notice] %>
+<script type="text/javascript" language="javascript">
+// <![CDATA[
+	Notice.show('<h2><%= flash[:notice] %></h2>');
+// ]]>
+</script>
+
+<% end %>

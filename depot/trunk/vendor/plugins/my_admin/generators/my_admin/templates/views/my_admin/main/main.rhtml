@@ -1,0 +1,42 @@
+<%= render :partial => 'includes' %>
+
+<style type="text/css">
+<!--
+a {text-decoration: none;}
+a:hover {
+  background-color: #369;
+  color: #fff;
+}
+-->
+</style>
+
+<h1>MyAdmin Dashboard</h1>
+<%
+trash_img = image_tag('/my_admin/images/destroy.png', :border => 'none')
+destroy_confirm_txt = "Are you 100% sure?\nThis will destroy ALL ROWS in this table and cannot be undone."
+%>
+<table cellpadding="2" cellspacing="2" width="98%">
+  <tr>
+    <th></th>
+    <th align="left"></th>
+    <th align="left">Quick Lookup</th>
+  </tr>
+  <% @models.each do |m| %>
+    <tr valign="middle" class="<%= cycle("even", "odd-main") %>">
+      <td style="font-size:1.9em" width="33%"><%= link_to(readable_class_name(m), url_for(:controller => 'model', :action => 'list', :model => m.to_s), :target => 'frame_content') %></td>
+      <td><%= link_to('Spy', url_for(:controller => 'spy', :action => 'index', :model => m.to_s), :target => 'frame_content') %></td>
+      <%= form_tag(url_for(:controller => 'model', :action => 'lookup', :model => m.to_s)) %>
+      <td width="300px;">
+          <select name="column_name" style="width: 150px;">
+            <%= column_options(m.columns) %>
+          </select>
+          <%= text_field_tag('query', '', :size => 7) %>
+          <input type="submit" value="Go"/>
+      </td>
+      <%= end_form_tag %>
+      <td>
+      <% destroy_all = url_for(:controller => 'model', :action => 'destroy_all', :model => m.to_s) %>
+      <%= link_to_remote("#{trash_img} Destroy All", :url => destroy_all, :post => true, :loading => 'loading()', :complete => 'loaded()', :confirm => destroy_confirm_txt) %></td>
+    </tr>
+  <% end %>
+</table>

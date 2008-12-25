@@ -1,0 +1,17 @@
+<%= render :partial => 'my_admin/main/includes' %>
+
+<h1>Editing <%= @klass_name %></h1>
+<%= form_tag(:action => 'update', :id => @model.id, :model => @klass.to_s) %>
+<table cellspacing="2" cellpadding="2" width="840px">
+  <tr>
+    <td colspan="3" align="center"><input type="Submit" value="Save" class="submit-box"></td>
+  </tr>
+  <%= render :partial => 'form', :locals => {:klass => @klass, :model => @model} %>
+  <tr>
+    <td colspan="3" align="center"><input type="Submit" value="Save" class="submit-box"></td>
+  </tr>
+</table>
+
+<%= end_form_tag %>
+
+<%= link_to "Refresh page", :action => 'edit', :id => @model.id, :model => @klass.to_s %>

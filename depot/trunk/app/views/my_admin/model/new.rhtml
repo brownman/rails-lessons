@@ -1,0 +1,16 @@
+<%= render :partial => 'my_admin/main/includes' %>
+
+<h1>New <%= @klass_name %></h1>
+<%= form_tag(:action => 'create', :id => @model.id, :model => @klass.to_s) %>
+
+<table cellspacing="2" cellpadding="2" width="600px">
+  <tr>
+    <td colspan="2" align="center"><input type="Submit" value="Save" class="submit-box"></td>
+  </tr>
+  <%= render :partial => 'form', :locals => {:klass => @klass, :model => @model} %>
+  <tr>
+    <td colspan="2" align="center"><input type="Submit" value="Save" class="submit-box"></td>
+  </tr>
+</table>
+
+<%= end_form_tag %>

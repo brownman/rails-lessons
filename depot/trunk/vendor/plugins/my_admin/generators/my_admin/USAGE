@@ -1,0 +1,10 @@
+Description:
+    Generates a new RailsMyAdmin module for your application.
+    All files are placed into subdirectories (organized under a MyAdmin module):
+    - app/controllers/my_admin
+    - app/helpers/my_admin
+    - app/view/my_admin
+    - public/my_admin
+
+Example:
+    ruby script/generate my_admin

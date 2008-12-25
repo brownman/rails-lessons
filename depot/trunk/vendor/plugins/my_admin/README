@@ -1,0 +1,57 @@
+RailsMyAdmin
+=======
+
+RailsMyAdmin is a backend database management addon for your Rails applications.
+
+It's available in the form of a Rails plugin, with an accompanying generator
+which copies the various RailsMyAdmin files necessary into subfolders in your
+application.
+
+It's inspired by the simplicity and usefulness of phpMyAdmin, but leverages
+Rails functionality to achieve similar results (and more!).
+
+== Installation ==
+
+Install the plugin with:
+
+  ruby script/plugin install http://railsmyadmin.googlecode.com/svn/trunk/my_admin/
+
+Once the plugin is installed, generate the railsMyAdmin files with:
+
+ruby script/generate my_admin
+
+_Note: this will copy files from the plugin folders into your application folders._
+
+Next, copy the following code snippet into the bottom of your environment.rb file:
+
+## MY ADMIN CONFIG
+require 'my_admin/my_admin_tool'
+# If you only want certain models to be available to RailsMyAdmin, set :all_models to false and specify the desired models in MY_ADMIN_MODELS
+MY_ADMIN_GLOBALS  = {:all_models => true, :confirm_destroy => false}
+# Uncomment this next line if you set :all_models to false above.
+#MY_ADMIN_MODELS  = [Page, Comment, User]      
+MY_ADMIN_AUTH     = Proc.new { |c| c.send("admin_logged_in?") }
+
+
+To obtain a list of other RailsMyAdmin rake tasks:
+
+rake -T my_admin
+
+== Other Features ==
+
+RailsMyAdmin features an AJAX-driven DiggSpy-like functionality for watching
+new rows getting added to tables.
+
+This could come in handy, for say, watching an "events" table on a very busy site,
+where new rows are getting added every few seconds or minutes.
+
+== Works at the Rails Level ==
+
+RailsMyAdmin uses ActiveRecord object's methods to edit, update, save and destroy
+objects.
+
+For examples, when an object is destroyed in RailsMyAdmin, the object's destroy
+method is called (as opposed to simply deleting the database row), so that any
+before_destroy and after_destroy hooks are called when the object is destroyed.
+
+
