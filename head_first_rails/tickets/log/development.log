@@ -111,3 +111,101 @@ Processing TicketsController#index (for 127.0.0.1 at 2009-07-04 16:03:04) [GET]
 Rendering template within layouts/tickets
 Rendering tickets/index
 Completed in 58ms (View: 53, DB: 1) | 200 OK [http://localhost/tickets]
+
+
+Processing TicketsController#index (for 127.0.0.1 at 2009-07-04 16:48:11) [GET]
+  [4;36;1mTicket Load (0.6ms)[0m   [0;1mSELECT * FROM "tickets" [0m
+Rendering template within layouts/tickets
+Rendering tickets/index
+Completed in 37ms (View: 32, DB: 1) | 200 OK [http://localhost/tickets/]
+
+
+Processing TicketsController#new (for 127.0.0.1 at 2009-07-04 16:48:17) [GET]
+Rendering template within layouts/tickets
+Rendering tickets/new
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/tickets/new]
+
+
+Processing TicketsController#index (for 127.0.0.1 at 2009-07-04 16:48:19) [GET]
+  [4;35;1mTicket Load (0.5ms)[0m   [0mSELECT * FROM "tickets" [0m
+Rendering template within layouts/tickets
+Rendering tickets/index
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://localhost/tickets]
+
+
+Processing TicketsController#show (for 127.0.0.1 at 2009-07-04 16:48:21) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mTicket Load (0.3ms)[0m   [0;1mSELECT * FROM "tickets" WHERE ("tickets"."id" = 1) [0m
+Rendering template within layouts/tickets
+Rendering tickets/show
+Completed in 47ms (View: 41, DB: 0) | 200 OK [http://localhost/tickets/1]
+
+
+Processing TicketsController#index (for 127.0.0.1 at 2009-07-04 16:48:23) [GET]
+  [4;35;1mTicket Load (0.5ms)[0m   [0mSELECT * FROM "tickets" [0m
+Rendering template within layouts/tickets
+Rendering tickets/index
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://localhost/tickets]
+
+
+Processing TicketsController#edit (for 127.0.0.1 at 2009-07-04 16:48:26) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mTicket Load (0.3ms)[0m   [0;1mSELECT * FROM "tickets" WHERE ("tickets"."id" = 1) [0m
+Rendering template within layouts/tickets
+Rendering tickets/edit
+Completed in 14ms (View: 8, DB: 0) | 200 OK [http://localhost/tickets/1/edit]
+
+
+Processing TicketsController#index (for 127.0.0.1 at 2009-07-04 16:48:28) [GET]
+  [4;35;1mTicket Load (0.5ms)[0m   [0mSELECT * FROM "tickets" [0m
+Rendering template within layouts/tickets
+Rendering tickets/index
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/tickets]
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateTickets (20090704205540)
+Migrating to AddPhoneToTickets (20090704222033)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mALTER TABLE "tickets" ADD "phone" varchar(255)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090704222033')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("tickets")[0m
+
+
+Processing TicketsController#index (for 127.0.0.1 at 2009-07-04 17:21:35) [GET]
+  [4;36;1mTicket Load (0.7ms)[0m   [0;1mSELECT * FROM "tickets" [0m
+Rendering template within layouts/tickets
+Rendering tickets/index
+Completed in 63ms (View: 5, DB: 1) | 200 OK [http://localhost/tickets]
+
+
+Processing TicketsController#index (for 127.0.0.1 at 2009-07-04 17:21:38) [GET]
+  [4;35;1mTicket Load (0.5ms)[0m   [0mSELECT * FROM "tickets" [0m
+Rendering template within layouts/tickets
+Rendering tickets/index
+Completed in 9ms (View: 4, DB: 0) | 200 OK [http://localhost/tickets]
+
+
+Processing TicketsController#index (for 127.0.0.1 at 2009-07-04 17:28:20) [GET]
+  [4;36;1mTicket Load (0.5ms)[0m   [0;1mSELECT * FROM "tickets" [0m
+Rendering template within layouts/tickets
+Rendering tickets/index
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/tickets]
+
+
+Processing TicketsController#index (for 127.0.0.1 at 2009-07-04 17:28:32) [GET]
+  [4;35;1mTicket Load (0.6ms)[0m   [0mSELECT * FROM "tickets" [0m
+Rendering template within layouts/tickets
+Rendering tickets/index
+Completed in 9ms (View: 5, DB: 1) | 200 OK [http://localhost/tickets]

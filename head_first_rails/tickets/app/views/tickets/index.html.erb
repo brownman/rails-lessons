@@ -3,10 +3,11 @@
 <table>
   <tr>
     <th>Name</th>
-    <th>Seat id seq</th>
+    <th>Seat #</th>
     <th>Address</th>
     <th>Price paid</th>
     <th>Email address</th>
+	<th>Phone</th>
   </tr>
 
 <% @tickets.each do |ticket| %>
@@ -19,6 +20,7 @@
     <td><%= link_to 'Show', ticket %></td>
     <td><%= link_to 'Edit', edit_ticket_path(ticket) %></td>
     <td><%= link_to 'Destroy', ticket, :confirm => 'Are you sure?', :method => :delete %></td>
+	<td><%=h ticket.phone %></td>
   </tr>
 <% end %>
 </table>

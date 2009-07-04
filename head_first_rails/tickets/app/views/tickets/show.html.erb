@@ -4,7 +4,7 @@
 </p>
 
 <p>
-  <b>Seat id seq:</b>
+  <b>Seat #:</b>
   <%=h @ticket.seat_id_seq %>
 </p>
 
@@ -21,6 +21,11 @@
 <p>
   <b>Email address:</b>
   <%=h @ticket.email_address %>
+</p>
+
+<p>
+	<%= f.label :phone %><br />
+	<%= f.text_field :phone %>
 </p>
 
 
