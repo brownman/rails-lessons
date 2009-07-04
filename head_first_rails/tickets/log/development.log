@@ -1,0 +1,113 @@
+
+
+Processing Rails::InfoController#properties (for 127.0.0.1 at 2009-07-04 15:49:52) [GET]
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+Completed in 53ms (View: 2, DB: 0) | 200 OK [http://localhost/rails/info/properties]
+
+
+Processing TicketsController#index (for 127.0.0.1 at 2009-07-04 15:55:56) [GET]
+  [4;35;1mTicket Load (0.0ms)[0m   [0mSQLite3::SQLException: no such table: tickets: SELECT * FROM "tickets" [0m
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such table: tickets: SELECT * FROM "tickets" ):
+  app/controllers/tickets_controller.rb:5:in `index'
+
+Rendered rescues/_trace (76.5ms)
+Rendered rescues/_request_and_response (1.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (6.7ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (6.5ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateTickets (20090704205540)
+  [4;36;1mSQL (0.6ms)[0m   [0;1mCREATE TABLE "tickets" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "seat_id_seq" varchar(255), "address" text, "price_paid" decimal, "email_address" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090704205540')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("tickets")[0m
+
+
+Processing TicketsController#index (for 127.0.0.1 at 2009-07-04 16:01:24) [GET]
+  [4;36;1mTicket Load (0.3ms)[0m   [0;1mSELECT * FROM "tickets" [0m
+Rendering template within layouts/tickets
+Rendering tickets/index
+Completed in 31ms (View: 26, DB: 0) | 200 OK [http://localhost/tickets/]
+
+
+Processing TicketsController#new (for 127.0.0.1 at 2009-07-04 16:01:27) [GET]
+Rendering template within layouts/tickets
+Rendering tickets/new
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/tickets/new]
+
+
+Processing TicketsController#new (for 127.0.0.1 at 2009-07-04 16:02:08) [GET]
+Rendering template within layouts/tickets
+Rendering tickets/new
+Completed in 46ms (View: 4, DB: 0) | 200 OK [http://localhost/tickets/new]
+
+
+Processing TicketsController#new (for 127.0.0.1 at 2009-07-04 16:02:48) [GET]
+Rendering template within layouts/tickets
+Rendering tickets/new
+Completed in 9ms (View: 4, DB: 0) | 200 OK [http://localhost/tickets/new]
+
+
+Processing TicketsController#create (for 127.0.0.1 at 2009-07-04 16:02:53) [POST]
+  Parameters: {"ticket"=>{"name"=>"Nathan Koch", "seat_id_seq"=>"13F", "price_paid"=>"100.00", "address"=>"2506 N. Sacramento Apt. 3, Chicago, IL", "email_address"=>"nathanrkoch@gmail.com"}, "commit"=>"Create", "authenticity_token"=>"A6gNyCyA3IPCRgncNzJ3saIFPGnZ/qh2Jm26snP6Gqk="}
+  [4;35;1mTicket Create (0.4ms)[0m   [0mINSERT INTO "tickets" ("name", "updated_at", "seat_id_seq", "price_paid", "address", "email_address", "created_at") VALUES('Nathan Koch', '2009-07-04 21:02:53', '13F', 100.0, '2506 N. Sacramento Apt. 3, Chicago, IL', 'nathanrkoch@gmail.com', '2009-07-04 21:02:53')[0m
+Redirected to http://localhost:3000/tickets/1
+Completed in 23ms (DB: 0) | 302 Found [http://localhost/tickets]
+
+
+Processing TicketsController#show (for 127.0.0.1 at 2009-07-04 16:02:53) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mTicket Load (0.3ms)[0m   [0;1mSELECT * FROM "tickets" WHERE ("tickets"."id" = 1) [0m
+Rendering template within layouts/tickets
+Rendering tickets/show
+Completed in 16ms (View: 7, DB: 0) | 200 OK [http://localhost/tickets/1]
+
+
+Processing TicketsController#index (for 127.0.0.1 at 2009-07-04 16:02:56) [GET]
+  [4;35;1mTicket Load (0.5ms)[0m   [0mSELECT * FROM "tickets" [0m
+Rendering template within layouts/tickets
+Rendering tickets/index
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/tickets]
+
+
+Processing TicketsController#show (for 127.0.0.1 at 2009-07-04 16:02:59) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mTicket Load (0.3ms)[0m   [0;1mSELECT * FROM "tickets" WHERE ("tickets"."id" = 1) [0m
+Rendering template within layouts/tickets
+Rendering tickets/show
+Completed in 8ms (View: 2, DB: 0) | 200 OK [http://localhost/tickets/1]
+
+
+Processing TicketsController#index (for 127.0.0.1 at 2009-07-04 16:03:00) [GET]
+  [4;35;1mTicket Load (0.5ms)[0m   [0mSELECT * FROM "tickets" [0m
+Rendering template within layouts/tickets
+Rendering tickets/index
+Completed in 61ms (View: 4, DB: 0) | 200 OK [http://localhost/tickets]
+
+
+Processing TicketsController#index (for 127.0.0.1 at 2009-07-04 16:03:04) [GET]
+  [4;36;1mTicket Load (0.5ms)[0m   [0;1mSELECT * FROM "tickets" [0m
+Rendering template within layouts/tickets
+Rendering tickets/index
+Completed in 58ms (View: 53, DB: 1) | 200 OK [http://localhost/tickets]
