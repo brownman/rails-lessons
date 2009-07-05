@@ -23,3 +23,272 @@ Migrating to CreateAds (20090705002052)
  WHERE type = 'table' AND NOT name = 'sqlite_sequence'
 [0m
   [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("ads")[0m
+
+
+Processing AdsController#3 (for 127.0.0.1 at 2009-07-05 13:53:26) [GET]
+
+ActionController::UnknownAction (No action responded to 3. Actions: ):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AdsController#show (for 127.0.0.1 at 2009-07-05 14:22:40) [GET]
+  Parameters: {"id"=>"3"}
+Rendering ads/show
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/ads/3]
+
+
+Processing AdsController#show (for 127.0.0.1 at 2009-07-05 14:22:44) [GET]
+  Parameters: {"id"=>"5"}
+Rendering ads/show
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/ads/5]
+
+
+Processing AdsController#show (for 127.0.0.1 at 2009-07-05 14:31:02) [GET]
+  Parameters: {"id"=>"5"}
+Rendering ads/show
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/ads/5]
+
+
+Processing AdsController#show (for 127.0.0.1 at 2009-07-05 14:48:21) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mAd Load (0.3ms)[0m   [0;1mSELECT * FROM "ads" WHERE ("ads"."id" = 5) [0m
+Rendering ads/show
+Completed in 7ms (View: 1, DB: 0) | 200 OK [http://localhost/ads/5]
+
+
+Processing AdsController#show (for 127.0.0.1 at 2009-07-05 14:48:23) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mAd Load (0.3ms)[0m   [0mSELECT * FROM "ads" WHERE ("ads"."id" = 5) [0m
+Rendering ads/show
+Completed in 41ms (View: 1, DB: 0) | 200 OK [http://localhost/ads/5]
+
+
+Processing AdsController#show (for 127.0.0.1 at 2009-07-05 14:53:25) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mAd Load (0.3ms)[0m   [0;1mSELECT * FROM "ads" WHERE ("ads"."id" = 5) [0m
+Rendering ads/show
+Completed in 11ms (View: 5, DB: 0) | 200 OK [http://localhost/ads/5]
+
+
+Processing AdsController#show (for 127.0.0.1 at 2009-07-05 14:53:42) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mAd Load (0.4ms)[0m   [0mSELECT * FROM "ads" WHERE ("ads"."id" = 5) [0m
+Rendering ads/show
+Completed in 9ms (View: 2, DB: 0) | 200 OK [http://localhost/ads/5]
+
+
+Processing AdsController#show (for 127.0.0.1 at 2009-07-05 14:53:54) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mAd Load (0.3ms)[0m   [0;1mSELECT * FROM "ads" WHERE ("ads"."id" = 5) [0m
+Rendering ads/show
+Completed in 10ms (View: 4, DB: 0) | 200 OK [http://localhost/ads/5]
+
+
+Processing AdsController#show (for 127.0.0.1 at 2009-07-05 14:54:56) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mAd Load (0.3ms)[0m   [0mSELECT * FROM "ads" WHERE ("ads"."id" = 5) [0m
+Rendering ads/show
+Completed in 7ms (View: 2, DB: 0) | 200 OK [http://localhost/ads/5]
+
+
+Processing AdsController#show (for 127.0.0.1 at 2009-07-05 14:54:57) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mAd Load (0.3ms)[0m   [0;1mSELECT * FROM "ads" WHERE ("ads"."id" = 5) [0m
+Rendering ads/show
+Completed in 8ms (View: 2, DB: 0) | 200 OK [http://localhost/ads/5]
+
+
+Processing AdsController#show (for 127.0.0.1 at 2009-07-05 18:23:11) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mAd Load (0.3ms)[0m   [0;1mSELECT * FROM "ads" WHERE ("ads"."id" = 3) [0m
+Rendering ads/show
+Completed in 60ms (View: 21, DB: 0) | 200 OK [http://localhost/ads/3]
+
+
+Processing AdsController#show (for 127.0.0.1 at 2009-07-05 18:23:20) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mAd Load (0.3ms)[0m   [0mSELECT * FROM "ads" WHERE ("ads"."id" = 2) [0m
+Rendering ads/show
+Completed in 7ms (View: 2, DB: 0) | 200 OK [http://localhost/ads/2]
+
+
+Processing AdsController#show (for 127.0.0.1 at 2009-07-05 18:23:24) [GET]
+  Parameters: {"id"=>"8"}
+  [4;36;1mAd Load (0.3ms)[0m   [0;1mSELECT * FROM "ads" WHERE ("ads"."id" = 8) [0m
+Rendering ads/show
+Completed in 7ms (View: 2, DB: 0) | 200 OK [http://localhost/ads/8]
+
+
+Processing AdsController#show (for 127.0.0.1 at 2009-07-05 18:23:29) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mAd Load (0.3ms)[0m   [0mSELECT * FROM "ads" WHERE ("ads"."id" = 7) [0m
+Rendering ads/show
+Completed in 7ms (View: 2, DB: 0) | 200 OK [http://localhost/ads/7]
+
+
+Processing AdsController#show (for 127.0.0.1 at 2009-07-05 18:23:33) [GET]
+  Parameters: {"id"=>"6"}
+  [4;36;1mAd Load (0.3ms)[0m   [0;1mSELECT * FROM "ads" WHERE ("ads"."id" = 6) [0m
+Rendering ads/show
+Completed in 7ms (View: 2, DB: 0) | 200 OK [http://localhost/ads/6]
+
+
+Processing AdsController#show (for 127.0.0.1 at 2009-07-05 18:23:36) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mAd Load (0.3ms)[0m   [0mSELECT * FROM "ads" WHERE ("ads"."id" = 4) [0m
+Rendering ads/show
+Completed in 7ms (View: 2, DB: 0) | 200 OK [http://localhost/ads/4]
+
+
+Processing AdsController#show (for 127.0.0.1 at 2009-07-05 18:23:39) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mAd Load (0.3ms)[0m   [0;1mSELECT * FROM "ads" WHERE ("ads"."id" = 2) [0m
+Rendering ads/show
+Completed in 7ms (View: 2, DB: 0) | 200 OK [http://localhost/ads/2]
+
+
+Processing AdsController#show (for 127.0.0.1 at 2009-07-05 18:23:42) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mAd Load (0.8ms)[0m   [0mSELECT * FROM "ads" WHERE ("ads"."id" = 3) [0m
+Rendering ads/show
+Completed in 9ms (View: 2, DB: 1) | 200 OK [http://localhost/ads/3]
+
+
+Processing AdsController#show (for 127.0.0.1 at 2009-07-05 18:24:23) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mAd Load (0.3ms)[0m   [0;1mSELECT * FROM "ads" WHERE ("ads"."id" = 4) [0m
+Rendering ads/show
+Completed in 8ms (View: 2, DB: 0) | 200 OK [http://localhost/ads/4]
+
+
+Processing AdsController#show (for 127.0.0.1 at 2009-07-05 18:25:06) [GET]
+  Parameters: {"id"=>"37"}
+  [4;35;1mAd Load (0.3ms)[0m   [0mSELECT * FROM "ads" WHERE ("ads"."id" = 37) [0m
+Rendering ads/show
+Completed in 7ms (View: 2, DB: 0) | 200 OK [http://localhost/ads/37]
+
+
+Processing AdsController#show (for 127.0.0.1 at 2009-07-05 18:25:12) [GET]
+  Parameters: {"id"=>"37"}
+  [4;36;1mAd Load (0.4ms)[0m   [0;1mSELECT * FROM "ads" WHERE ("ads"."id" = 37) [0m
+Rendering ads/show
+Completed in 8ms (View: 2, DB: 0) | 200 OK [http://localhost/ads/37]
+
+
+Processing AdsController#show (for 127.0.0.1 at 2009-07-05 18:25:20) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mAd Load (0.3ms)[0m   [0mSELECT * FROM "ads" WHERE ("ads"."id" = 1) [0m
+Rendering ads/show
+Completed in 7ms (View: 2, DB: 0) | 200 OK [http://localhost/ads/1]
+
+
+Processing AdsController#show (for 127.0.0.1 at 2009-07-05 18:25:26) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mAd Load (0.3ms)[0m   [0;1mSELECT * FROM "ads" WHERE ("ads"."id" = 2) [0m
+Rendering ads/show
+Completed in 8ms (View: 2, DB: 0) | 200 OK [http://localhost/ads/2]
+
+
+Processing AdsController#show (for 127.0.0.1 at 2009-07-05 18:35:53) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mAd Load (0.3ms)[0m   [0mSELECT * FROM "ads" WHERE ("ads"."id" = 2) [0m
+Rendering ads/show
+Completed in 7ms (View: 2, DB: 0) | 200 OK [http://localhost/ads/2]
+
+
+Processing AdsController#show (for 127.0.0.1 at 2009-07-05 18:35:59) [GET]
+
+ActiveRecord::RecordNotFound (Couldn't find Ad without an ID):
+  app/controllers/ads_controller.rb:3:in `show'
+
+Rendered rescues/_trace (34.4ms)
+Rendered rescues/_request_and_response (1.3ms)
+Rendering rescues/layout (not_found)
+
+
+Processing AdsController#show (for 127.0.0.1 at 2009-07-05 18:52:43) [GET]
+
+ActiveRecord::RecordNotFound (Couldn't find Ad without an ID):
+  app/controllers/ads_controller.rb:8:in `show'
+
+Rendered rescues/_trace (75.4ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (not_found)
+
+
+Processing AdsController#show (for 127.0.0.1 at 2009-07-05 18:52:44) [GET]
+
+ActiveRecord::RecordNotFound (Couldn't find Ad without an ID):
+  app/controllers/ads_controller.rb:8:in `show'
+
+Rendered rescues/_trace (77.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+
+
+Processing AdsController#show (for 127.0.0.1 at 2009-07-05 18:52:49) [GET]
+
+ActiveRecord::RecordNotFound (Couldn't find Ad without an ID):
+  app/controllers/ads_controller.rb:8:in `show'
+
+Rendered rescues/_trace (30.8ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (not_found)
+
+
+Processing AdsController#show (for 127.0.0.1 at 2009-07-05 18:53:22) [GET]
+
+ActiveRecord::RecordNotFound (Couldn't find Ad without an ID):
+  app/controllers/ads_controller.rb:8:in `show'
+
+Rendered rescues/_trace (32.5ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (not_found)
+
+
+Processing AdsController#show (for 127.0.0.1 at 2009-07-05 18:53:23) [GET]
+
+ActiveRecord::RecordNotFound (Couldn't find Ad without an ID):
+  app/controllers/ads_controller.rb:8:in `show'
+
+Rendered rescues/_trace (74.0ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (not_found)
+
+
+Processing AdsController#index (for 127.0.0.1 at 2009-07-05 18:53:48) [GET]
+  [4;36;1mAd Load (1.4ms)[0m   [0;1mSELECT * FROM "ads" [0m
+Rendering ads/index
+Completed in 25ms (View: 20, DB: 1) | 200 OK [http://localhost/ads/]
+
+
+Processing AdsController#show (for 127.0.0.1 at 2009-07-05 18:54:01) [GET]
+
+ActiveRecord::RecordNotFound (Couldn't find Ad without an ID):
+  app/controllers/ads_controller.rb:8:in `show'
+
+Rendered rescues/_trace (30.3ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (not_found)
+
+
+Processing AdsController#index (for 127.0.0.1 at 2009-07-05 18:54:39) [GET]
+  [4;35;1mAd Load (1.5ms)[0m   [0mSELECT * FROM "ads" [0m
+Rendering ads/index
+Completed in 9ms (View: 3, DB: 2) | 200 OK [http://localhost/ads/]
+
+
+Processing AdsController#show (for 127.0.0.1 at 2009-07-05 18:54:42) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mAd Load (42.7ms)[0m   [0;1mSELECT * FROM "ads" WHERE ("ads"."id" = 1) [0m
+Rendering ads/show
+Completed in 51ms (View: 3, DB: 43) | 200 OK [http://localhost/ads/1]
+
+
+Processing AdsController#show (for 127.0.0.1 at 2009-07-05 18:54:48) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mAd Load (0.3ms)[0m   [0mSELECT * FROM "ads" WHERE ("ads"."id" = 2) [0m
+Rendering ads/show
+Completed in 7ms (View: 2, DB: 0) | 200 OK [http://localhost/ads/2]
