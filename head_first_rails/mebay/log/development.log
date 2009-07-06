@@ -292,3 +292,93 @@ Processing AdsController#show (for 127.0.0.1 at 2009-07-05 18:54:48) [GET]
   [4;35;1mAd Load (0.3ms)[0m   [0mSELECT * FROM "ads" WHERE ("ads"."id" = 2) [0m
 Rendering ads/show
 Completed in 7ms (View: 2, DB: 0) | 200 OK [http://localhost/ads/2]
+
+
+Processing AdsController#index (for 127.0.0.1 at 2009-07-05 19:12:27) [GET]
+  [4;36;1mAd Load (1.4ms)[0m   [0;1mSELECT * FROM "ads" [0m
+Rendering template within layouts/ads
+Rendering ads/index
+Completed in 38ms (View: 33, DB: 1) | 200 OK [http://localhost/ads/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-05 19:12:27) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/default.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AdsController#index (for 127.0.0.1 at 2009-07-05 19:13:11) [GET]
+  [4;35;1mAd Load (1.4ms)[0m   [0mSELECT * FROM "ads" [0m
+Rendering template within layouts/ads
+Rendering ads/index
+Completed in 9ms (View: 3, DB: 1) | 200 OK [http://localhost/ads/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-05 19:13:12) [GET]
+
+ActionController::RoutingError (No route matches "/images/bg.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-05 19:13:12) [GET]
+
+ActionController::RoutingError (No route matches "/images/bgHeader.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-05 19:13:12) [GET]
+
+ActionController::RoutingError (No route matches "/images/logo.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AdsController#index (for 127.0.0.1 at 2009-07-05 19:13:59) [GET]
+  [4;36;1mAd Load (1.5ms)[0m   [0;1mSELECT * FROM "ads" [0m
+Rendering template within layouts/ads
+Rendering ads/index
+Completed in 9ms (View: 3, DB: 2) | 200 OK [http://localhost/ads/]
+
+
+Processing AdsController#index (for 127.0.0.1 at 2009-07-05 19:14:02) [GET]
+  [4;35;1mAd Load (1.4ms)[0m   [0mSELECT * FROM "ads" [0m
+Rendering template within layouts/ads
+Rendering ads/index
+Completed in 10ms (View: 4, DB: 1) | 200 OK [http://localhost/ads/]
+
+
+Processing AdsController#show (for 127.0.0.1 at 2009-07-05 19:14:08) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mAd Load (0.3ms)[0m   [0;1mSELECT * FROM "ads" WHERE ("ads"."id" = 1) [0m
+Rendering template within layouts/ads
+Rendering ads/show
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://localhost/ads/1]
+
+
+Processing AdsController#index (for 127.0.0.1 at 2009-07-05 19:14:23) [GET]
+  [4;35;1mAd Load (1.4ms)[0m   [0mSELECT * FROM "ads" [0m
+Rendering template within layouts/ads
+Rendering ads/index
+Completed in 9ms (View: 3, DB: 1) | 200 OK [http://localhost/ads/]
+
+
+Processing AdsController#show (for 127.0.0.1 at 2009-07-05 19:14:25) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mAd Load (0.3ms)[0m   [0;1mSELECT * FROM "ads" WHERE ("ads"."id" = 2) [0m
+Rendering template within layouts/ads
+Rendering ads/show
+Completed in 7ms (View: 2, DB: 0) | 200 OK [http://localhost/ads/2]
+
+
+Processing AdsController#index (for 127.0.0.1 at 2009-07-05 19:14:30) [GET]
+  [4;35;1mAd Load (1.4ms)[0m   [0mSELECT * FROM "ads" [0m
+Rendering template within layouts/ads
+Rendering ads/index
+Completed in 8ms (View: 3, DB: 1) | 200 OK [http://localhost/ads/]
