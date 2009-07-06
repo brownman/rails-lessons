@@ -814,3 +814,90 @@ Processing AdsController#index (for 127.0.0.1 at 2009-07-05 20:16:52) [GET]
 Rendering template within layouts/ads
 Rendering ads/index
 Completed in 10ms (View: 4, DB: 2) | 200 OK [http://localhost/ads/]
+
+
+Processing AdsController#index (for 127.0.0.1 at 2009-07-05 20:40:10) [GET]
+  [4;36;1mAd Load (1.9ms)[0m   [0;1mSELECT * FROM "ads" [0m
+Rendering template within layouts/ads
+Rendering ads/index
+Completed in 24ms (View: 18, DB: 2) | 200 OK [http://localhost/ads/]
+
+
+Processing AdsController#show (for 127.0.0.1 at 2009-07-05 20:40:11) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mAd Load (0.3ms)[0m   [0mSELECT * FROM "ads" WHERE ("ads"."id" = 1) [0m
+Rendering template within layouts/ads
+Rendering ads/show
+Completed in 44ms (View: 38, DB: 0) | 200 OK [http://localhost/ads/1]
+
+
+Processing AdsController#show (for 127.0.0.1 at 2009-07-05 20:43:09) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mAd Load (0.3ms)[0m   [0;1mSELECT * FROM "ads" WHERE ("ads"."id" = 1) [0m
+Rendering template within layouts/ads
+Rendering ads/show
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://localhost/ads/1]
+
+
+Processing AdsController#edit (for 127.0.0.1 at 2009-07-05 20:43:12) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mAd Load (0.3ms)[0m   [0mSELECT * FROM "ads" WHERE ("ads"."id" = 1) [0m
+Rendering template within layouts/ads
+Rendering ads/edit
+Completed in 12ms (View: 6, DB: 0) | 200 OK [http://localhost/ads/1/edit]
+
+
+Processing AdsController#show (for 127.0.0.1 at 2009-07-05 20:44:16) [PUT]
+  Parameters: {"commit"=>"Update", "ad"=>{"name"=>"Typewriter", "price"=>"71.95", "description"=>"Old manual typewriter. Many years useful service. Works best with a bottle next to it.", "img_url"=>"http://etc.usf.edu/clipart/4200/4253/typewriter_1_lg.gif", "seller_id"=>"54", "email"=>"dhammett@email.com"}, "authenticity_token"=>"LK0cKL4yxqvLEJUxjcdv385cA0WuZoxwxQBrJSQ1H9Y=", "id"=>"update"}
+  [4;36;1mAd Load (0.1ms)[0m   [0;1mSELECT * FROM "ads" WHERE ("ads"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Ad with ID=update):
+  app/controllers/ads_controller.rb:8:in `show'
+
+Rendered rescues/_trace (72.1ms)
+Rendered rescues/_request_and_response (0.7ms)
+Rendering rescues/layout (not_found)
+
+
+Processing AdsController#show (for 127.0.0.1 at 2009-07-05 20:45:46) [PUT]
+  Parameters: {"commit"=>"Update", "ad"=>{"name"=>"Typewriter", "price"=>"71.95", "description"=>"Old manual typewriter. Many years useful service. Works best with a bottle next to it.", "img_url"=>"http://etc.usf.edu/clipart/4200/4253/typewriter_1_lg.gif", "seller_id"=>"54", "email"=>"dhammett@email.com"}, "authenticity_token"=>"LK0cKL4yxqvLEJUxjcdv385cA0WuZoxwxQBrJSQ1H9Y=", "id"=>"update"}
+  [4;35;1mAd Load (0.1ms)[0m   [0mSELECT * FROM "ads" WHERE ("ads"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Ad with ID=update):
+  app/controllers/ads_controller.rb:8:in `show'
+
+Rendered rescues/_trace (78.1ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (not_found)
+
+
+Processing AdsController#show (for 127.0.0.1 at 2009-07-05 20:45:54) [PUT]
+  Parameters: {"commit"=>"Update", "ad"=>{"name"=>"Typewriter", "price"=>"71.95", "description"=>"Old manual typewriter. Many years useful service. Works best with a bottle next to it.", "img_url"=>"http://etc.usf.edu/clipart/4200/4253/typewriter_1_lg.gif", "seller_id"=>"54", "email"=>"dhammett@email.com"}, "authenticity_token"=>"LK0cKL4yxqvLEJUxjcdv385cA0WuZoxwxQBrJSQ1H9Y=", "id"=>"update"}
+  [4;36;1mAd Load (0.1ms)[0m   [0;1mSELECT * FROM "ads" WHERE ("ads"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Ad with ID=update):
+  app/controllers/ads_controller.rb:8:in `show'
+
+Rendered rescues/_trace (81.0ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (not_found)
+
+
+Processing AdsController#edit (for 127.0.0.1 at 2009-07-05 20:46:16) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mAd Load (0.3ms)[0m   [0mSELECT * FROM "ads" WHERE ("ads"."id" = 1) [0m
+Rendering template within layouts/ads
+Rendering ads/edit
+Completed in 10ms (View: 4, DB: 0) | 200 OK [http://localhost/ads/1/edit]
+
+
+Processing AdsController#show (for 127.0.0.1 at 2009-07-05 20:46:48) [PUT]
+  Parameters: {"commit"=>"Update", "ad"=>{"name"=>"Typewriter", "price"=>"71.95", "description"=>"Old manual typewriter. Many years useful service. Works best with a bottle next to it.", "img_url"=>"http://etc.usf.edu/clipart/4200/4253/typewriter_1_lg.gif", "seller_id"=>"54", "email"=>"dhammett@email.com"}, "authenticity_token"=>"LK0cKL4yxqvLEJUxjcdv385cA0WuZoxwxQBrJSQ1H9Y=", "id"=>"update"}
+  [4;36;1mAd Load (0.1ms)[0m   [0;1mSELECT * FROM "ads" WHERE ("ads"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Ad with ID=update):
+  app/controllers/ads_controller.rb:8:in `show'
+
+Rendered rescues/_trace (74.2ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (not_found)
