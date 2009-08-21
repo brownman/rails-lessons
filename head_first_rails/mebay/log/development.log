@@ -901,3 +901,316 @@ ActiveRecord::RecordNotFound (Couldn't find Ad with ID=update):
 Rendered rescues/_trace (74.2ms)
 Rendered rescues/_request_and_response (0.4ms)
 Rendering rescues/layout (not_found)
+
+
+Processing AdsController#index (for 127.0.0.1 at 2009-08-21 14:03:50) [GET]
+  [4;36;1mAd Load (2.8ms)[0m   [0;1mSELECT * FROM "ads" [0m
+Rendering template within layouts/ads
+Rendering ads/index
+Completed in 56ms (View: 48, DB: 3) | 200 OK [http://localhost/ads/]
+
+
+Processing AdsController#show (for 127.0.0.1 at 2009-08-21 14:04:41) [GET]
+  Parameters: {"id"=>"40"}
+  [4;35;1mAd Load (0.3ms)[0m   [0mSELECT * FROM "ads" WHERE ("ads"."id" = 40) [0m
+Rendering template within layouts/ads
+Rendering ads/show
+Completed in 33ms (View: 28, DB: 0) | 200 OK [http://localhost/ads/40]
+
+
+Processing AdsController#show (for 127.0.0.1 at 2009-08-21 14:04:41) [GET]
+  Parameters: {"id"=>"fffffffffffff"}
+  [4;36;1mAd Load (0.2ms)[0m   [0;1mSELECT * FROM "ads" WHERE ("ads"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Ad with ID=fffffffffffff):
+  app/controllers/ads_controller.rb:8:in `show'
+
+Rendered rescues/_trace (36.1ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (not_found)
+
+
+Processing AdsController#edit (for 127.0.0.1 at 2009-08-21 14:04:43) [GET]
+  Parameters: {"id"=>"40"}
+  [4;35;1mAd Load (0.4ms)[0m   [0mSELECT * FROM "ads" WHERE ("ads"."id" = 40) [0m
+Rendering template within layouts/ads
+Rendering ads/edit
+Completed in 55ms (View: 47, DB: 0) | 200 OK [http://localhost/ads/40/edit]
+
+
+Processing AdsController#update (for 127.0.0.1 at 2009-08-21 14:05:08) [PUT]
+  Parameters: {"commit"=>"Update", "ad"=>{"name"=>"ffffffffffffff", "price"=>"0", "description"=>"fffffffffffffffffdsfdsfgdsfkdfjsdkfjsdddsdsdsdsdsdsdsdsd", "img_url"=>"fffffffffffff", "seller_id"=>"0", "email"=>"ffffffffffff"}, "authenticity_token"=>"89kcSAIiCDvuu5CUPz405ybrzCPS1Ft6yIcV6unSVDw=", "id"=>"40"}
+  [4;36;1mAd Load (0.3ms)[0m   [0;1mSELECT * FROM "ads" WHERE ("ads"."id" = 40) [0m
+  [4;35;1mAd Update (0.5ms)[0m   [0mUPDATE "ads" SET "description" = 'fffffffffffffffffdsfdsfgdsfkdfjsdkfjsdddsdsdsdsdsdsdsdsd', "updated_at" = '2009-08-21 19:05:08' WHERE "id" = 40[0m
+Redirected to http://localhost:3000/ads/40
+Completed in 18ms (DB: 1) | 302 Found [http://localhost/ads/40/update]
+
+
+Processing AdsController#show (for 127.0.0.1 at 2009-08-21 14:05:08) [GET]
+  Parameters: {"id"=>"40"}
+  [4;36;1mAd Load (0.3ms)[0m   [0;1mSELECT * FROM "ads" WHERE ("ads"."id" = 40) [0m
+Rendering template within layouts/ads
+Rendering ads/show
+Completed in 8ms (View: 2, DB: 0) | 200 OK [http://localhost/ads/40]
+
+
+Processing AdsController#show (for 127.0.0.1 at 2009-08-21 14:05:08) [GET]
+  Parameters: {"id"=>"fffffffffffff"}
+  [4;35;1mAd Load (0.2ms)[0m   [0mSELECT * FROM "ads" WHERE ("ads"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Ad with ID=fffffffffffff):
+  app/controllers/ads_controller.rb:8:in `show'
+
+Rendered rescues/_trace (35.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+
+
+Processing AdsController#index (for 127.0.0.1 at 2009-08-21 14:05:16) [GET]
+  [4;36;1mAd Load (2.1ms)[0m   [0;1mSELECT * FROM "ads" [0m
+Rendering template within layouts/ads
+Rendering ads/index
+Completed in 10ms (View: 4, DB: 2) | 200 OK [http://localhost/ads/]
+
+
+Processing AdsController#show (for 127.0.0.1 at 2009-08-21 14:12:53) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mAd Load (0.4ms)[0m   [0mSELECT * FROM "ads" WHERE ("ads"."id" = 1) [0m
+Rendering template within layouts/ads
+Rendering ads/show
+Completed in 11ms (View: 3, DB: 0) | 200 OK [http://localhost/ads/1]
+
+
+Processing AdsController#edit (for 127.0.0.1 at 2009-08-21 14:12:55) [GET]
+  Parameters: {"id"=>"1"}
+Filter chain halted as [:check_logged_in] rendered_or_redirected.
+Completed in 1ms (View: 1, DB: 0) | 401 Unauthorized [http://localhost/ads/1/edit]
+
+
+Processing AdsController#edit (for 127.0.0.1 at 2009-08-21 14:13:05) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mAd Load (0.3ms)[0m   [0;1mSELECT * FROM "ads" WHERE ("ads"."id" = 1) [0m
+Rendering template within layouts/ads
+Rendering ads/edit
+Completed in 9ms (View: 4, DB: 0) | 200 OK [http://localhost/ads/1/edit]
+
+
+Processing AdsController#update (for 127.0.0.1 at 2009-08-21 14:13:15) [PUT]
+  Parameters: {"commit"=>"Update", "ad"=>{"name"=>"Typewriter", "price"=>"71.95", "description"=>"Old manual typewriter. Many years useful service. Works best with a bottle next to it. TESTING", "img_url"=>"http://homepage.mac.com/david_griffiths/typewriter.png", "seller_id"=>"54", "email"=>"dhammett@email.com"}, "authenticity_token"=>"89kcSAIiCDvuu5CUPz405ybrzCPS1Ft6yIcV6unSVDw=", "id"=>"1"}
+Filter chain halted as [:check_logged_in] rendered_or_redirected.
+Completed in 1ms (View: 1, DB: 0) | 401 Unauthorized [http://localhost/ads/1/update]
+
+
+Processing AdsController#update (for 127.0.0.1 at 2009-08-21 14:13:15) [PUT]
+  Parameters: {"commit"=>"Update", "ad"=>{"name"=>"Typewriter", "price"=>"71.95", "description"=>"Old manual typewriter. Many years useful service. Works best with a bottle next to it. TESTING", "img_url"=>"http://homepage.mac.com/david_griffiths/typewriter.png", "seller_id"=>"54", "email"=>"dhammett@email.com"}, "authenticity_token"=>"89kcSAIiCDvuu5CUPz405ybrzCPS1Ft6yIcV6unSVDw=", "id"=>"1"}
+  [4;35;1mAd Load (0.3ms)[0m   [0mSELECT * FROM "ads" WHERE ("ads"."id" = 1) [0m
+  [4;36;1mAd Update (0.4ms)[0m   [0;1mUPDATE "ads" SET "description" = 'Old manual typewriter. Many years useful service. Works best with a bottle next to it. TESTING', "updated_at" = '2009-08-21 19:13:15' WHERE "id" = 1[0m
+Redirected to http://localhost:3000/ads/1
+Completed in 10ms (DB: 1) | 302 Found [http://localhost/ads/1/update]
+
+
+Processing AdsController#show (for 127.0.0.1 at 2009-08-21 14:13:15) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mAd Load (0.4ms)[0m   [0mSELECT * FROM "ads" WHERE ("ads"."id" = 1) [0m
+Rendering template within layouts/ads
+Rendering ads/show
+Completed in 9ms (View: 3, DB: 0) | 200 OK [http://localhost/ads/1]
+
+
+Processing AdsController#index (for 127.0.0.1 at 2009-08-21 14:13:21) [GET]
+  [4;36;1mAd Load (2.1ms)[0m   [0;1mSELECT * FROM "ads" [0m
+Rendering template within layouts/ads
+Rendering ads/index
+Completed in 9ms (View: 4, DB: 2) | 200 OK [http://localhost/ads/]
+
+
+Processing AdsController#show (for 127.0.0.1 at 2009-08-21 14:13:22) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mAd Load (0.4ms)[0m   [0mSELECT * FROM "ads" WHERE ("ads"."id" = 1) [0m
+Rendering template within layouts/ads
+Rendering ads/show
+Completed in 10ms (View: 3, DB: 0) | 200 OK [http://localhost/ads/1]
+
+
+Processing AdsController#index (for 127.0.0.1 at 2009-08-21 14:13:25) [GET]
+  [4;36;1mAd Load (3.1ms)[0m   [0;1mSELECT * FROM "ads" [0m
+Rendering template within layouts/ads
+Rendering ads/index
+Completed in 15ms (View: 6, DB: 3) | 200 OK [http://localhost/ads/]
+
+
+Processing AdsController#show (for 127.0.0.1 at 2009-08-21 14:13:27) [GET]
+  Parameters: {"id"=>"40"}
+  [4;35;1mAd Load (0.3ms)[0m   [0mSELECT * FROM "ads" WHERE ("ads"."id" = 40) [0m
+Rendering template within layouts/ads
+Rendering ads/show
+Completed in 7ms (View: 2, DB: 0) | 200 OK [http://localhost/ads/40]
+
+
+Processing AdsController#show (for 127.0.0.1 at 2009-08-21 14:13:27) [GET]
+  Parameters: {"id"=>"fffffffffffff"}
+  [4;36;1mAd Load (0.1ms)[0m   [0;1mSELECT * FROM "ads" WHERE ("ads"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Ad with ID=fffffffffffff):
+  app/controllers/ads_controller.rb:9:in `show'
+
+Rendered rescues/_trace (32.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+
+
+Processing AdsController#edit (for 127.0.0.1 at 2009-08-21 14:13:29) [GET]
+  Parameters: {"id"=>"40"}
+Filter chain halted as [:check_logged_in] rendered_or_redirected.
+Completed in 1ms (View: 1, DB: 0) | 401 Unauthorized [http://localhost/ads/40/edit]
+
+
+Processing AdsController#edit (for 127.0.0.1 at 2009-08-21 14:13:29) [GET]
+  Parameters: {"id"=>"40"}
+  [4;35;1mAd Load (0.3ms)[0m   [0mSELECT * FROM "ads" WHERE ("ads"."id" = 40) [0m
+Rendering template within layouts/ads
+Rendering ads/edit
+Completed in 9ms (View: 4, DB: 0) | 200 OK [http://localhost/ads/40/edit]
+
+
+Processing AdsController#update (for 127.0.0.1 at 2009-08-21 14:13:35) [PUT]
+  Parameters: {"commit"=>"Update", "ad"=>{"name"=>"ffffffffffffff", "price"=>"0", "description"=>"fffffffffffffffffdsfdsfgdsfkdfjsdkfjsdddsdsdsdsdsdsdsdsdsdfsdfsdf", "img_url"=>"fffffffffffff", "seller_id"=>"0", "email"=>"ffffffffffff"}, "authenticity_token"=>"89kcSAIiCDvuu5CUPz405ybrzCPS1Ft6yIcV6unSVDw=", "id"=>"40"}
+Filter chain halted as [:check_logged_in] rendered_or_redirected.
+Completed in 1ms (View: 1, DB: 0) | 401 Unauthorized [http://localhost/ads/40/update]
+
+
+Processing AdsController#update (for 127.0.0.1 at 2009-08-21 14:13:35) [PUT]
+  Parameters: {"commit"=>"Update", "ad"=>{"name"=>"ffffffffffffff", "price"=>"0", "description"=>"fffffffffffffffffdsfdsfgdsfkdfjsdkfjsdddsdsdsdsdsdsdsdsdsdfsdfsdf", "img_url"=>"fffffffffffff", "seller_id"=>"0", "email"=>"ffffffffffff"}, "authenticity_token"=>"89kcSAIiCDvuu5CUPz405ybrzCPS1Ft6yIcV6unSVDw=", "id"=>"40"}
+  [4;36;1mAd Load (0.3ms)[0m   [0;1mSELECT * FROM "ads" WHERE ("ads"."id" = 40) [0m
+  [4;35;1mAd Update (0.4ms)[0m   [0mUPDATE "ads" SET "description" = 'fffffffffffffffffdsfdsfgdsfkdfjsdkfjsdddsdsdsdsdsdsdsdsdsdfsdfsdf', "updated_at" = '2009-08-21 19:13:35' WHERE "id" = 40[0m
+Redirected to http://localhost:3000/ads/40
+Completed in 21ms (DB: 1) | 302 Found [http://localhost/ads/40/update]
+
+
+Processing AdsController#show (for 127.0.0.1 at 2009-08-21 14:13:35) [GET]
+  Parameters: {"id"=>"40"}
+  [4;36;1mAd Load (0.3ms)[0m   [0;1mSELECT * FROM "ads" WHERE ("ads"."id" = 40) [0m
+Rendering template within layouts/ads
+Rendering ads/show
+Completed in 8ms (View: 2, DB: 0) | 200 OK [http://localhost/ads/40]
+
+
+Processing AdsController#show (for 127.0.0.1 at 2009-08-21 14:13:35) [GET]
+  Parameters: {"id"=>"fffffffffffff"}
+  [4;35;1mAd Load (0.1ms)[0m   [0mSELECT * FROM "ads" WHERE ("ads"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Ad with ID=fffffffffffff):
+  app/controllers/ads_controller.rb:9:in `show'
+
+Rendered rescues/_trace (35.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+
+
+Processing AdsController#index (for 127.0.0.1 at 2009-08-21 14:13:38) [GET]
+  [4;36;1mAd Load (3.2ms)[0m   [0;1mSELECT * FROM "ads" [0m
+Rendering template within layouts/ads
+Rendering ads/index
+Completed in 15ms (View: 5, DB: 3) | 200 OK [http://localhost/ads/]
+
+
+Processing AdsController#index (for 127.0.0.1 at 2009-08-21 14:22:28) [GET]
+  [4;35;1mAd Load (2.0ms)[0m   [0mSELECT * FROM "ads" [0m
+Rendering template within layouts/ads
+Rendering ads/index
+Completed in 12ms (View: 6, DB: 2) | 200 OK [http://localhost/ads/]
+
+
+Processing AdsController#destroy (for 127.0.0.1 at 2009-08-21 14:22:45) [GET]
+  Parameters: {"id"=>"41"}
+  [4;36;1mAd Load (0.4ms)[0m   [0;1mSELECT * FROM "ads" WHERE ("ads"."id" = 41) [0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.-):
+  app/controllers/ads_controller.rb:33:in `destroy'
+
+Rendered rescues/_trace (35.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AdsController#destroy (for 127.0.0.1 at 2009-08-21 14:22:55) [GET]
+  Parameters: {"id"=>"41"}
+  [4;35;1mAd Load (0.3ms)[0m   [0mSELECT * FROM "ads" WHERE ("ads"."id" = 41) [0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.-):
+  app/controllers/ads_controller.rb:33:in `destroy'
+
+Rendered rescues/_trace (34.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AdsController#destroy (for 127.0.0.1 at 2009-08-21 14:23:40) [GET]
+  Parameters: {"id"=>"40"}
+  [4;36;1mAd Load (0.5ms)[0m   [0;1mSELECT * FROM "ads" WHERE ("ads"."id" = 40) [0m
+  [4;35;1mAd Destroy (0.4ms)[0m   [0mDELETE FROM "ads" WHERE "id" = 40[0m
+Redirected to http://localhost:3000/ads/
+Completed in 21ms (DB: 1) | 302 Found [http://localhost/ads/40/delete]
+
+
+Processing AdsController#index (for 127.0.0.1 at 2009-08-21 14:23:40) [GET]
+  [4;36;1mAd Load (2.0ms)[0m   [0;1mSELECT * FROM "ads" [0m
+Rendering template within layouts/ads
+Rendering ads/index
+Completed in 10ms (View: 4, DB: 2) | 200 OK [http://localhost/ads/]
+
+
+Processing AdsController#destroy (for 127.0.0.1 at 2009-08-21 14:23:42) [GET]
+  Parameters: {"id"=>"41"}
+  [4;35;1mAd Load (0.5ms)[0m   [0mSELECT * FROM "ads" WHERE ("ads"."id" = 41) [0m
+  [4;36;1mAd Destroy (0.5ms)[0m   [0;1mDELETE FROM "ads" WHERE "id" = 41[0m
+Redirected to http://localhost:3000/ads/
+Completed in 11ms (DB: 1) | 302 Found [http://localhost/ads/41/delete]
+
+
+Processing AdsController#index (for 127.0.0.1 at 2009-08-21 14:23:42) [GET]
+  [4;35;1mAd Load (1.8ms)[0m   [0mSELECT * FROM "ads" [0m
+Rendering template within layouts/ads
+Rendering ads/index
+Completed in 9ms (View: 4, DB: 2) | 200 OK [http://localhost/ads/]
+
+
+Processing AdsController#destroy (for 127.0.0.1 at 2009-08-21 14:23:44) [GET]
+  Parameters: {"id"=>"39"}
+  [4;36;1mAd Load (0.3ms)[0m   [0;1mSELECT * FROM "ads" WHERE ("ads"."id" = 39) [0m
+  [4;35;1mAd Destroy (0.3ms)[0m   [0mDELETE FROM "ads" WHERE "id" = 39[0m
+Redirected to http://localhost:3000/ads/
+Completed in 18ms (DB: 1) | 302 Found [http://localhost/ads/39/delete]
+
+
+Processing AdsController#index (for 127.0.0.1 at 2009-08-21 14:23:44) [GET]
+  [4;36;1mAd Load (1.9ms)[0m   [0;1mSELECT * FROM "ads" [0m
+Rendering template within layouts/ads
+Rendering ads/index
+Completed in 11ms (View: 5, DB: 2) | 200 OK [http://localhost/ads/]
+
+
+Processing AdsController#destroy (for 127.0.0.1 at 2009-08-21 14:23:45) [GET]
+  Parameters: {"id"=>"38"}
+  [4;35;1mAd Load (0.4ms)[0m   [0mSELECT * FROM "ads" WHERE ("ads"."id" = 38) [0m
+  [4;36;1mAd Destroy (0.5ms)[0m   [0;1mDELETE FROM "ads" WHERE "id" = 38[0m
+Redirected to http://localhost:3000/ads/
+Completed in 21ms (DB: 1) | 302 Found [http://localhost/ads/38/delete]
+
+
+Processing AdsController#index (for 127.0.0.1 at 2009-08-21 14:23:45) [GET]
+  [4;35;1mAd Load (1.7ms)[0m   [0mSELECT * FROM "ads" [0m
+Rendering template within layouts/ads
+Rendering ads/index
+Completed in 9ms (View: 4, DB: 2) | 200 OK [http://localhost/ads/]
+
+
+Processing AdsController#index (for 127.0.0.1 at 2009-08-21 14:29:19) [GET]
+  [4;36;1mAd Load (1.7ms)[0m   [0;1mSELECT * FROM "ads" [0m
+Rendering template within layouts/ads
+Rendering ads/index
+Completed in 53ms (View: 7, DB: 2) | 200 OK [http://localhost/ads/]

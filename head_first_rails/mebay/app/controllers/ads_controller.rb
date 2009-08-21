@@ -1,4 +1,5 @@
 class AdsController < ApplicationController
+  before_filter :check_logged_in, :only => [:edit, :update]
   
   def index
     @ads = Ad.find(:all)
@@ -27,4 +28,18 @@ class AdsController < ApplicationController
     @ad.update_attributes(params[:ad])
     redirect_to "/ads/#{ @ad.id }"
   end
+  
+  def destroy
+    @ad = Ad.find(params[:id])
+    @ad.destroy
+    redirect_to "/ads/"
+  end
+  
+  private
+  def check_logged_in
+    authenticate_or_request_with_http_basic("Ads") do |username, password|
+      username == "admin" && password == "password"
+    end
+  end
+  
 end
