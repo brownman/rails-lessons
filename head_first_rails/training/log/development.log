@@ -23,3 +23,148 @@ Migrating to CreateClientWorkouts (20090821194155)
  WHERE type = 'table' AND NOT name = 'sqlite_sequence'
 [0m
   [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("client_workouts")[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-21 14:43:47) [GET]
+
+ActionController::RoutingError (No route matches "/ads/38/delete" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-21 14:43:56) [GET]
+
+ActionController::RoutingError (No route matches "/client_workout/" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ClientWorkoutsController#index (for 127.0.0.1 at 2009-08-21 14:44:09) [GET]
+  [4;36;1mClientWorkout Load (0.6ms)[0m   [0;1mSELECT * FROM "client_workouts" [0m
+Rendering template within layouts/client_workouts
+Rendering client_workouts/index
+Completed in 97ms (View: 90, DB: 1) | 200 OK [http://localhost/client_workouts/]
+
+
+Processing ClientWorkoutsController#new (for 127.0.0.1 at 2009-08-21 14:44:12) [GET]
+Rendering template within layouts/client_workouts
+Rendering client_workouts/new
+Completed in 161ms (View: 156, DB: 0) | 200 OK [http://localhost/client_workouts/new]
+
+
+Processing ClientWorkoutsController#create (for 127.0.0.1 at 2009-08-21 14:44:42) [POST]
+  Parameters: {"commit"=>"Create", "client_workout"=>{"client_name"=>"Nathan", "trainer"=>"Jim", "paid_amount"=>"1000", "duration_mins"=>"100", "date_of_workout(1i)"=>"2009", "date_of_workout(2i)"=>"8", "date_of_workout(3i)"=>"21"}, "authenticity_token"=>"vuzQCsM6LYoW2A4kacS1TYEUrCkNKJCnyhp9RCWQtbk="}
+  [4;35;1mClientWorkout Create (0.5ms)[0m   [0mINSERT INTO "client_workouts" ("updated_at", "client_name", "trainer", "paid_amount", "duration_mins", "date_of_workout", "created_at") VALUES('2009-08-21 19:44:42', 'Nathan', 'Jim', 1000.0, 100, '2009-08-21', '2009-08-21 19:44:42')[0m
+Redirected to http://localhost:3000/client_workouts/1
+Completed in 19ms (DB: 1) | 302 Found [http://localhost/client_workouts]
+
+
+Processing ClientWorkoutsController#show (for 127.0.0.1 at 2009-08-21 14:44:42) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mClientWorkout Load (0.3ms)[0m   [0;1mSELECT * FROM "client_workouts" WHERE ("client_workouts"."id" = 1) [0m
+Rendering template within layouts/client_workouts
+Rendering client_workouts/show
+Completed in 71ms (View: 65, DB: 0) | 200 OK [http://localhost/client_workouts/1]
+
+
+Processing ClientWorkoutsController#index (for 127.0.0.1 at 2009-08-21 14:44:43) [GET]
+  [4;35;1mClientWorkout Load (0.5ms)[0m   [0mSELECT * FROM "client_workouts" [0m
+Rendering template within layouts/client_workouts
+Rendering client_workouts/index
+Completed in 10ms (View: 5, DB: 1) | 200 OK [http://localhost/client_workouts]
+
+
+Processing ClientWorkoutsController#index (for 127.0.0.1 at 2009-08-21 14:55:26) [GET]
+  [4;36;1mClientWorkout Load (0.5ms)[0m   [0;1mSELECT * FROM "client_workouts" [0m
+Rendering template within layouts/client_workouts
+Rendering client_workouts/index
+Completed in 13ms (View: 8, DB: 1) | 200 OK [http://localhost/client_workouts]
+
+
+Processing ClientWorkoutsController#show (for 127.0.0.1 at 2009-08-21 14:55:40) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mClientWorkout Load (0.3ms)[0m   [0mSELECT * FROM "client_workouts" WHERE ("client_workouts"."id" = 1) [0m
+Rendering template within layouts/client_workouts
+Rendering client_workouts/show
+Completed in 9ms (View: 3, DB: 0) | 200 OK [http://localhost/client_workouts/1]
+
+
+Processing ClientWorkoutsController#index (for 127.0.0.1 at 2009-08-21 14:55:43) [GET]
+  [4;36;1mClientWorkout Load (0.5ms)[0m   [0;1mSELECT * FROM "client_workouts" [0m
+Rendering template within layouts/client_workouts
+Rendering client_workouts/index
+Completed in 9ms (View: 5, DB: 1) | 200 OK [http://localhost/client_workouts]
+
+
+Processing ClientWorkoutsController#index (for 127.0.0.1 at 2009-08-21 15:01:36) [GET]
+  [4;35;1mClientWorkout Load (0.5ms)[0m   [0mSELECT * FROM "client_workouts" [0m
+Rendering template within layouts/client_workouts
+Rendering client_workouts/index
+Completed in 10ms (View: 5, DB: 1) | 200 OK [http://localhost/client_workouts]
+
+
+Processing ClientWorkoutsController#find (for 127.0.0.1 at 2009-08-21 15:01:41) [POST]
+  Parameters: {"search_string"=>"test", "submit"=>"Search", "authenticity_token"=>"vuzQCsM6LYoW2A4kacS1TYEUrCkNKJCnyhp9RCWQtbk="}
+
+ActionView::MissingTemplate (Missing template client_workouts/find.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ClientWorkoutsController#find (for 127.0.0.1 at 2009-08-21 15:10:27) [POST]
+  Parameters: {"search_string"=>"nathan", "submit"=>"Search", "authenticity_token"=>"vuzQCsM6LYoW2A4kacS1TYEUrCkNKJCnyhp9RCWQtbk="}
+  [4;36;1mClientWorkout Load (0.3ms)[0m   [0;1mSELECT * FROM "client_workouts" WHERE ("client_workouts"."client_name" = 'nathan') [0m
+Rendering template within layouts/client_workouts
+Rendering client_workouts/find
+Completed in 50ms (View: 16, DB: 0) | 200 OK [http://localhost/client_workouts/find]
+
+
+Processing ClientWorkoutsController#find (for 127.0.0.1 at 2009-08-21 15:10:39) [POST]
+  Parameters: {"search_string"=>"jim", "submit"=>"Search", "authenticity_token"=>"vuzQCsM6LYoW2A4kacS1TYEUrCkNKJCnyhp9RCWQtbk="}
+  [4;35;1mClientWorkout Load (0.1ms)[0m   [0mSELECT * FROM "client_workouts" WHERE ("client_workouts"."client_name" = 'jim') [0m
+Rendering template within layouts/client_workouts
+Rendering client_workouts/find
+Completed in 7ms (View: 1, DB: 0) | 200 OK [http://localhost/client_workouts/find]
+
+
+Processing ClientWorkoutsController#find (for 127.0.0.1 at 2009-08-21 15:10:42) [POST]
+  Parameters: {"search_string"=>"Nathan", "submit"=>"Search", "authenticity_token"=>"vuzQCsM6LYoW2A4kacS1TYEUrCkNKJCnyhp9RCWQtbk="}
+  [4;36;1mClientWorkout Load (0.3ms)[0m   [0;1mSELECT * FROM "client_workouts" WHERE ("client_workouts"."client_name" = 'Nathan') [0m
+Rendering template within layouts/client_workouts
+Rendering client_workouts/find
+Completed in 10ms (View: 4, DB: 0) | 200 OK [http://localhost/client_workouts/find]
+
+
+Processing ClientWorkoutsController#find (for 127.0.0.1 at 2009-08-21 15:12:04) [POST]
+  Parameters: {"search_string"=>"Nathan", "submit"=>"Search", "authenticity_token"=>"vuzQCsM6LYoW2A4kacS1TYEUrCkNKJCnyhp9RCWQtbk="}
+  [4;35;1mClientWorkout Load (0.4ms)[0m   [0mSELECT * FROM "client_workouts" WHERE ("client_workouts"."client_name" = 'Nathan') [0m
+Rendering template within layouts/client_workouts
+Rendering client_workouts/find
+Completed in 13ms (View: 5, DB: 0) | 200 OK [http://localhost/client_workouts/find]
+
+
+Processing ClientWorkoutsController#find (for 127.0.0.1 at 2009-08-21 15:12:39) [POST]
+  Parameters: {"search_string"=>"Nathan", "submit"=>"Search", "authenticity_token"=>"vuzQCsM6LYoW2A4kacS1TYEUrCkNKJCnyhp9RCWQtbk="}
+  [4;36;1mClientWorkout Load (0.3ms)[0m   [0;1mSELECT * FROM "client_workouts" WHERE ("client_workouts"."client_name" = 'Nathan') [0m
+Rendering template within layouts/client_workouts
+Rendering client_workouts/find
+Completed in 13ms (View: 7, DB: 0) | 200 OK [http://localhost/client_workouts/find]
+
+
+Processing ClientWorkoutsController#find (for 127.0.0.1 at 2009-08-21 15:17:04) [POST]
+  Parameters: {"search_string"=>"Nathan", "submit"=>"Search", "authenticity_token"=>"vuzQCsM6LYoW2A4kacS1TYEUrCkNKJCnyhp9RCWQtbk="}
+  [4;35;1mClientWorkout Load (0.6ms)[0m   [0mSELECT * FROM "client_workouts" WHERE (client_name = 'Nathan' OR trainer = 'Nathan') [0m
+Rendering template within layouts/client_workouts
+Rendering client_workouts/find
+Completed in 10ms (View: 5, DB: 1) | 200 OK [http://localhost/client_workouts/find]
+
+
+Processing ClientWorkoutsController#find (for 127.0.0.1 at 2009-08-21 15:17:08) [POST]
+  Parameters: {"search_string"=>"Jim", "submit"=>"Search", "authenticity_token"=>"vuzQCsM6LYoW2A4kacS1TYEUrCkNKJCnyhp9RCWQtbk="}
+  [4;36;1mClientWorkout Load (0.5ms)[0m   [0;1mSELECT * FROM "client_workouts" WHERE (client_name = 'Jim' OR trainer = 'Jim') [0m
+Rendering template within layouts/client_workouts
+Rendering client_workouts/find
+Completed in 9ms (View: 5, DB: 1) | 200 OK [http://localhost/client_workouts/find]

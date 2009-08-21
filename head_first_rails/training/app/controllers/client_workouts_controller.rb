@@ -1,4 +1,10 @@
 class ClientWorkoutsController < ApplicationController
+  def find
+    @client_workouts = ClientWorkout.find(:all, 
+    :conditions=>["client_name = ? OR trainer = ?",
+      params[:search_string], params[:search_string]])
+  end
+  
   # GET /client_workouts
   # GET /client_workouts.xml
   def index
