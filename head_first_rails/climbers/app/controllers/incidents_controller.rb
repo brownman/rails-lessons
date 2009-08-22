@@ -1,4 +1,9 @@
 class IncidentsController < ApplicationController
+  
+  def show_with_map
+    @incident = Incident.find(params[:id])
+  end
+  
   # GET /incidents
   # GET /incidents.xml
   def index

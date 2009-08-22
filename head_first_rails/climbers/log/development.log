@@ -51,3 +51,48 @@ Processing IncidentsController#show (for 127.0.0.1 at 2009-08-22 16:06:16) [GET]
 Rendering template within layouts/incidents
 Rendering incidents/show
 Completed in 11ms (View: 6, DB: 0) | 200 OK [http://localhost/incidents/1]
+
+
+Processing IncidentsController#show to 1 (for 127.0.0.1 at 2009-08-22 16:22:47) [GET]
+  Parameters: {"id"=>"map"}
+  [4;35;1mIncident Load (0.1ms)[0m   [0mSELECT * FROM "incidents" WHERE ("incidents"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Incident with ID=map):
+  app/controllers/incidents_controller.rb:21:in `show'
+
+Rendered rescues/_trace (39.0ms)
+Rendered rescues/_request_and_response (1.5ms)
+Rendering rescues/layout (not_found)
+
+
+Processing IncidentsController#show_with_map (for 127.0.0.1 at 2009-08-22 16:22:53) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mIncident Load (0.3ms)[0m   [0;1mSELECT * FROM "incidents" WHERE ("incidents"."id" = 1) [0m
+Rendering template within layouts/incidents
+Rendering incidents/show_with_map
+Completed in 15ms (View: 10, DB: 0) | 200 OK [http://localhost/incidents/map/1]
+
+
+Processing IncidentsController#show_with_map (for 127.0.0.1 at 2009-08-22 16:30:47) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mIncident Load (0.4ms)[0m   [0mSELECT * FROM "incidents" WHERE ("incidents"."id" = 1) [0m
+Rendering template within layouts/incidents
+Rendering incidents/show_with_map
+Completed in 12ms (View: 6, DB: 0) | 200 OK [http://localhost/incidents/map/1]
+
+
+Processing IncidentsController#show_with_map (for 127.0.0.1 at 2009-08-22 16:30:49) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mIncident Load (0.3ms)[0m   [0;1mSELECT * FROM "incidents" WHERE ("incidents"."id" = 1) [0m
+Rendering template within layouts/incidents
+Rendering incidents/show_with_map
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://localhost/incidents/map/1]
+
+
+Processing IncidentsController#show_with_map (for 127.0.0.1 at 2009-08-22 16:31:54) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mIncident Load (0.3ms)[0m   [0mSELECT * FROM "incidents" WHERE ("incidents"."id" = 1) [0m
+Rendering template within layouts/incidents
+Rendering incidents/show_with_map
+Rendered incidents/_map (6.4ms)
+Completed in 20ms (View: 15, DB: 0) | 200 OK [http://localhost/incidents/map/1]
