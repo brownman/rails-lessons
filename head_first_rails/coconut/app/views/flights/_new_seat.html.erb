@@ -1,6 +1,6 @@
 <h1>New seat</h1>
 
-<% form_for(seat, :update => 'seats') do |f| %>
+<% remote_form_for(seat) do |f| %>
   <%= f.error_messages %>
   <%= f.hidden_field :flight_id %>
   <p>

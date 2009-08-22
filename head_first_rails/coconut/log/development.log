@@ -1148,3 +1148,219 @@ Processing SeatsController#flight_seats (for 127.0.0.1 at 2009-08-22 15:24:34) [
   [4;36;1mSeat Load (0.6ms)[0m   [0;1mSELECT * FROM "seats" WHERE ("seats".flight_id = 1) [0m
 Rendered flights/_seat_list (69.6ms)
 Completed in 83ms (View: 71, DB: 1) | 200 OK [http://localhost/flights/1/seats?authenticity_token=qw4pkUX9lyXvqoz0ucbOo%2BGuqvdJpbQ8KgRB9nXDa7A%3D]
+
+
+Processing FlightsController#show (for 127.0.0.1 at 2009-08-22 15:26:25) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mFlight Load (0.4ms)[0m   [0mSELECT * FROM "flights" WHERE ("flights"."id" = 1) [0m
+Rendering template within layouts/flights
+Rendering flights/show
+  [4;36;1mSeat Load (0.4ms)[0m   [0;1mSELECT * FROM "seats" WHERE ("seats".flight_id = 1) [0m
+Rendered flights/_seat_list (4.4ms)
+Rendered flights/_new_seat (2.0ms)
+Completed in 21ms (View: 14, DB: 1) | 200 OK [http://localhost/flights/1]
+
+
+Processing SeatsController#create (for 127.0.0.1 at 2009-08-22 15:26:36) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"qw4pkUX9lyXvqoz0ucbOo+GuqvdJpbQ8KgRB9nXDa7A=", "seat"=>{"name"=>"Tester 2", "flight_id"=>"1", "baggage"=>"0.2"}}
+  [4;35;1mFlight Load (0.3ms)[0m   [0mSELECT * FROM "flights" WHERE ("flights"."id" = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "seats" WHERE ("seats".flight_id = 1) [0m
+  [4;35;1mSeat Create (0.3ms)[0m   [0mINSERT INTO "seats" ("name", "updated_at", "flight_id", "baggage", "created_at") VALUES('Tester 2', '2009-08-22 20:26:36', 1, 0.2, '2009-08-22 20:26:36')[0m
+Redirected to http://localhost:3000/seats/4
+Completed in 16ms (DB: 1) | 302 Found [http://localhost/seats]
+
+
+Processing SeatsController#show (for 127.0.0.1 at 2009-08-22 15:26:36) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mSeat Load (0.3ms)[0m   [0;1mSELECT * FROM "seats" WHERE ("seats"."id" = 4) [0m
+Rendering template within layouts/seats
+Rendering seats/show
+Completed in 8ms (View: 2, DB: 0) | 200 OK [http://localhost/seats/4]
+
+
+Processing SeatsController#create (for 127.0.0.1 at 2009-08-22 15:29:03) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"qw4pkUX9lyXvqoz0ucbOo+GuqvdJpbQ8KgRB9nXDa7A=", "seat"=>{"name"=>"Tester 3", "flight_id"=>"1", "baggage"=>"0.2"}}
+  [4;35;1mFlight Load (0.3ms)[0m   [0mSELECT * FROM "flights" WHERE ("flights"."id" = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "seats" WHERE ("seats".flight_id = 1) [0m
+  [4;35;1mSeat Create (0.4ms)[0m   [0mINSERT INTO "seats" ("name", "updated_at", "flight_id", "baggage", "created_at") VALUES('Tester 3', '2009-08-22 20:29:03', 1, 0.2, '2009-08-22 20:29:03')[0m
+  [4;36;1mSeat Load (0.6ms)[0m   [0;1mSELECT * FROM "seats" WHERE ("seats".flight_id = 1) [0m
+Rendered flights/_seat_list (3.6ms)
+Completed in 19ms (View: 4, DB: 1) | 200 OK [http://localhost/seats]
+
+
+Processing SeatsController#create (for 127.0.0.1 at 2009-08-22 15:29:08) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"qw4pkUX9lyXvqoz0ucbOo+GuqvdJpbQ8KgRB9nXDa7A=", "seat"=>{"name"=>"Tester 4", "flight_id"=>"1", "baggage"=>"0.2"}}
+  [4;35;1mFlight Load (0.3ms)[0m   [0mSELECT * FROM "flights" WHERE ("flights"."id" = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "seats" WHERE ("seats".flight_id = 1) [0m
+  [4;35;1mSeat Create (0.4ms)[0m   [0mINSERT INTO "seats" ("name", "updated_at", "flight_id", "baggage", "created_at") VALUES('Tester 4', '2009-08-22 20:29:09', 1, 0.2, '2009-08-22 20:29:09')[0m
+  [4;36;1mSeat Load (0.6ms)[0m   [0;1mSELECT * FROM "seats" WHERE ("seats".flight_id = 1) [0m
+Rendered flights/_seat_list (4.2ms)
+Completed in 20ms (View: 5, DB: 1) | 200 OK [http://localhost/seats]
+
+
+Processing SeatsController#create (for 127.0.0.1 at 2009-08-22 15:29:12) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"qw4pkUX9lyXvqoz0ucbOo+GuqvdJpbQ8KgRB9nXDa7A=", "seat"=>{"name"=>"Tester 5", "flight_id"=>"1", "baggage"=>"0.2"}}
+  [4;35;1mFlight Load (0.3ms)[0m   [0mSELECT * FROM "flights" WHERE ("flights"."id" = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "seats" WHERE ("seats".flight_id = 1) [0m
+  [4;35;1mSeat Create (0.3ms)[0m   [0mINSERT INTO "seats" ("name", "updated_at", "flight_id", "baggage", "created_at") VALUES('Tester 5', '2009-08-22 20:29:12', 1, 0.2, '2009-08-22 20:29:12')[0m
+  [4;36;1mSeat Load (0.8ms)[0m   [0;1mSELECT * FROM "seats" WHERE ("seats".flight_id = 1) [0m
+Rendered flights/_seat_list (4.9ms)
+Completed in 21ms (View: 5, DB: 2) | 200 OK [http://localhost/seats]
+
+
+Processing FlightsController#show (for 127.0.0.1 at 2009-08-22 15:44:10) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mFlight Load (0.3ms)[0m   [0mSELECT * FROM "flights" WHERE ("flights"."id" = 1) [0m
+Rendering template within layouts/flights
+Rendering flights/show
+  [4;36;1mSeat Load (0.9ms)[0m   [0;1mSELECT * FROM "seats" WHERE ("seats".flight_id = 1) [0m
+Rendered flights/_seat_list (7.2ms)
+Rendered flights/_new_seat (1.9ms)
+Completed in 28ms (View: 21, DB: 1) | 200 OK [http://localhost/flights/1]
+
+
+Processing SeatsController#create (for 127.0.0.1 at 2009-08-22 15:44:15) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"qw4pkUX9lyXvqoz0ucbOo+GuqvdJpbQ8KgRB9nXDa7A=", "seat"=>{"name"=>"Tester 6", "flight_id"=>"1", "baggage"=>"0.2"}}
+  [4;35;1mFlight Load (0.3ms)[0m   [0mSELECT * FROM "flights" WHERE ("flights"."id" = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "seats" WHERE ("seats".flight_id = 1) [0m
+  [4;35;1mSeat Create (0.4ms)[0m   [0mINSERT INTO "seats" ("name", "updated_at", "flight_id", "baggage", "created_at") VALUES('Tester 6', '2009-08-22 20:44:15', 1, 0.2, '2009-08-22 20:44:15')[0m
+Completed in 16ms (View: 10, DB: 1) | 200 OK [http://localhost/seats]
+
+
+Processing SeatsController#create (for 127.0.0.1 at 2009-08-22 15:44:20) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"qw4pkUX9lyXvqoz0ucbOo+GuqvdJpbQ8KgRB9nXDa7A=", "seat"=>{"name"=>"Tester 4", "flight_id"=>"1", "baggage"=>"0.2"}}
+  [4;36;1mFlight Load (0.3ms)[0m   [0;1mSELECT * FROM "flights" WHERE ("flights"."id" = 1) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "seats" WHERE ("seats".flight_id = 1) [0m
+  [4;36;1mSeat Create (0.4ms)[0m   [0;1mINSERT INTO "seats" ("name", "updated_at", "flight_id", "baggage", "created_at") VALUES('Tester 4', '2009-08-22 20:44:20', 1, 0.2, '2009-08-22 20:44:20')[0m
+Completed in 17ms (View: 10, DB: 1) | 200 OK [http://localhost/seats]
+
+
+Processing SeatsController#create (for 127.0.0.1 at 2009-08-22 15:44:22) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"qw4pkUX9lyXvqoz0ucbOo+GuqvdJpbQ8KgRB9nXDa7A=", "seat"=>{"name"=>"Tester 4", "flight_id"=>"1", "baggage"=>"0.2"}}
+  [4;35;1mFlight Load (0.3ms)[0m   [0mSELECT * FROM "flights" WHERE ("flights"."id" = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "seats" WHERE ("seats".flight_id = 1) [0m
+  [4;35;1mSeat Create (0.4ms)[0m   [0mINSERT INTO "seats" ("name", "updated_at", "flight_id", "baggage", "created_at") VALUES('Tester 4', '2009-08-22 20:44:22', 1, 0.2, '2009-08-22 20:44:22')[0m
+Completed in 17ms (View: 10, DB: 1) | 200 OK [http://localhost/seats]
+
+
+Processing SeatsController#create (for 127.0.0.1 at 2009-08-22 15:44:22) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"qw4pkUX9lyXvqoz0ucbOo+GuqvdJpbQ8KgRB9nXDa7A=", "seat"=>{"name"=>"Tester 4", "flight_id"=>"1", "baggage"=>"0.2"}}
+  [4;36;1mFlight Load (0.3ms)[0m   [0;1mSELECT * FROM "flights" WHERE ("flights"."id" = 1) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "seats" WHERE ("seats".flight_id = 1) [0m
+  [4;36;1mSeat Create (0.3ms)[0m   [0;1mINSERT INTO "seats" ("name", "updated_at", "flight_id", "baggage", "created_at") VALUES('Tester 4', '2009-08-22 20:44:22', 1, 0.2, '2009-08-22 20:44:22')[0m
+Completed in 16ms (View: 10, DB: 1) | 200 OK [http://localhost/seats]
+
+
+Processing SeatsController#create (for 127.0.0.1 at 2009-08-22 15:44:23) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"qw4pkUX9lyXvqoz0ucbOo+GuqvdJpbQ8KgRB9nXDa7A=", "seat"=>{"name"=>"Tester 4", "flight_id"=>"1", "baggage"=>"0.2"}}
+  [4;35;1mFlight Load (0.3ms)[0m   [0mSELECT * FROM "flights" WHERE ("flights"."id" = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "seats" WHERE ("seats".flight_id = 1) [0m
+Completed in 13ms (View: 7, DB: 0) | 200 OK [http://localhost/seats]
+
+
+Processing SeatsController#create (for 127.0.0.1 at 2009-08-22 15:44:24) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"qw4pkUX9lyXvqoz0ucbOo+GuqvdJpbQ8KgRB9nXDa7A=", "seat"=>{"name"=>"Tester 4", "flight_id"=>"1", "baggage"=>"0.2"}}
+  [4;35;1mFlight Load (0.3ms)[0m   [0mSELECT * FROM "flights" WHERE ("flights"."id" = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "seats" WHERE ("seats".flight_id = 1) [0m
+Completed in 13ms (View: 7, DB: 0) | 200 OK [http://localhost/seats]
+
+
+Processing SeatsController#flight_seats (for 127.0.0.1 at 2009-08-22 15:44:27) [GET]
+  Parameters: {"flights"=>"flights", "flight_id"=>"1", "authenticity_token"=>"qw4pkUX9lyXvqoz0ucbOo+GuqvdJpbQ8KgRB9nXDa7A="}
+  [4;35;1mFlight Load (0.4ms)[0m   [0mSELECT * FROM "flights" WHERE ("flights"."id" = 1) [0m
+  [4;36;1mSeat Load (1.7ms)[0m   [0;1mSELECT * FROM "seats" WHERE ("seats".flight_id = 1) [0m
+Rendered flights/_seat_list (12.4ms)
+Completed in 26ms (View: 12, DB: 2) | 200 OK [http://localhost/flights/1/seats?authenticity_token=qw4pkUX9lyXvqoz0ucbOo%2BGuqvdJpbQ8KgRB9nXDa7A%3D]
+
+
+Processing FlightsController#show (for 127.0.0.1 at 2009-08-22 15:47:06) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mFlight Load (0.3ms)[0m   [0mSELECT * FROM "flights" WHERE ("flights"."id" = 1) [0m
+Rendering template within layouts/flights
+Rendering flights/show
+  [4;36;1mSeat Load (1.1ms)[0m   [0;1mSELECT * FROM "seats" WHERE ("seats".flight_id = 1) [0m
+Rendered flights/_seat_list (9.5ms)
+Rendered flights/_new_seat (1.0ms)
+Completed in 23ms (View: 15, DB: 1) | 200 OK [http://localhost/flights/1]
+
+
+Processing SeatsController#create (for 127.0.0.1 at 2009-08-22 15:47:11) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"qw4pkUX9lyXvqoz0ucbOo+GuqvdJpbQ8KgRB9nXDa7A=", "seat"=>{"name"=>"Tester 12", "flight_id"=>"1", "baggage"=>"0.2"}}
+  [4;35;1mFlight Load (0.3ms)[0m   [0mSELECT * FROM "flights" WHERE ("flights"."id" = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "seats" WHERE ("seats".flight_id = 1) [0m
+  [4;35;1mSeat Load (1.1ms)[0m   [0mSELECT * FROM "seats" WHERE ("seats".flight_id = 1) [0m
+Rendered flights/_seat_list (7.5ms)
+Completed in 23ms (View: 15, DB: 2) | 200 OK [http://localhost/seats]
+
+
+Processing SeatsController#destroy (for 127.0.0.1 at 2009-08-22 15:47:16) [DELETE]
+  Parameters: {"authenticity_token"=>"qw4pkUX9lyXvqoz0ucbOo+GuqvdJpbQ8KgRB9nXDa7A=", "id"=>"11"}
+  [4;36;1mSeat Load (0.4ms)[0m   [0;1mSELECT * FROM "seats" WHERE ("seats"."id" = 11) [0m
+  [4;35;1mSeat Destroy (0.6ms)[0m   [0mDELETE FROM "seats" WHERE "id" = 11[0m
+Redirected to http://localhost:3000/seats
+Completed in 93ms (DB: 1) | 302 Found [http://localhost/seats/11]
+
+
+Processing SeatsController#index (for 127.0.0.1 at 2009-08-22 15:47:17) [GET]
+  [4;36;1mSeat Load (1.4ms)[0m   [0;1mSELECT * FROM "seats" [0m
+Rendering template within layouts/seats
+Rendering seats/index
+Completed in 16ms (View: 10, DB: 1) | 200 OK [http://localhost/seats]
+
+
+Processing SeatsController#destroy (for 127.0.0.1 at 2009-08-22 15:47:20) [DELETE]
+  Parameters: {"authenticity_token"=>"qw4pkUX9lyXvqoz0ucbOo+GuqvdJpbQ8KgRB9nXDa7A=", "id"=>"10"}
+  [4;35;1mSeat Load (0.3ms)[0m   [0mSELECT * FROM "seats" WHERE ("seats"."id" = 10) [0m
+  [4;36;1mSeat Destroy (0.3ms)[0m   [0;1mDELETE FROM "seats" WHERE "id" = 10[0m
+Redirected to http://localhost:3000/seats
+Completed in 19ms (DB: 1) | 302 Found [http://localhost/seats/10]
+
+
+Processing SeatsController#index (for 127.0.0.1 at 2009-08-22 15:47:20) [GET]
+  [4;35;1mSeat Load (1.2ms)[0m   [0mSELECT * FROM "seats" [0m
+Rendering template within layouts/seats
+Rendering seats/index
+Completed in 14ms (View: 8, DB: 1) | 200 OK [http://localhost/seats]
+
+
+Processing SeatsController#destroy (for 127.0.0.1 at 2009-08-22 15:47:22) [DELETE]
+  Parameters: {"authenticity_token"=>"qw4pkUX9lyXvqoz0ucbOo+GuqvdJpbQ8KgRB9nXDa7A=", "id"=>"9"}
+  [4;36;1mSeat Load (0.3ms)[0m   [0;1mSELECT * FROM "seats" WHERE ("seats"."id" = 9) [0m
+  [4;35;1mSeat Destroy (0.6ms)[0m   [0mDELETE FROM "seats" WHERE "id" = 9[0m
+Redirected to http://localhost:3000/seats
+Completed in 19ms (DB: 1) | 302 Found [http://localhost/seats/9]
+
+
+Processing SeatsController#index (for 127.0.0.1 at 2009-08-22 15:47:22) [GET]
+  [4;36;1mSeat Load (1.1ms)[0m   [0;1mSELECT * FROM "seats" [0m
+Rendering template within layouts/seats
+Rendering seats/index
+Completed in 13ms (View: 8, DB: 1) | 200 OK [http://localhost/seats]
+
+
+Processing FlightsController#index (for 127.0.0.1 at 2009-08-22 15:47:26) [GET]
+  [4;35;1mFlight Load (0.8ms)[0m   [0mSELECT * FROM "flights" [0m
+Rendering template within layouts/flights
+Rendering flights/index
+Completed in 12ms (View: 6, DB: 1) | 200 OK [http://localhost/flights]
+
+
+Processing FlightsController#show (for 127.0.0.1 at 2009-08-22 15:47:29) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mFlight Load (0.3ms)[0m   [0;1mSELECT * FROM "flights" WHERE ("flights"."id" = 1) [0m
+Rendering template within layouts/flights
+Rendering flights/show
+  [4;35;1mSeat Load (0.8ms)[0m   [0mSELECT * FROM "seats" WHERE ("seats".flight_id = 1) [0m
+Rendered flights/_seat_list (7.6ms)
+Rendered flights/_new_seat (1.0ms)
+Completed in 20ms (View: 13, DB: 1) | 200 OK [http://localhost/flights/1]
+
+
+Processing SeatsController#create (for 127.0.0.1 at 2009-08-22 15:47:41) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"qw4pkUX9lyXvqoz0ucbOo+GuqvdJpbQ8KgRB9nXDa7A=", "seat"=>{"name"=>"TESTER 7", "flight_id"=>"1", "baggage"=>"0.3"}}
+  [4;36;1mFlight Load (0.3ms)[0m   [0;1mSELECT * FROM "flights" WHERE ("flights"."id" = 1) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "seats" WHERE ("seats".flight_id = 1) [0m
+  [4;36;1mSeat Create (0.4ms)[0m   [0;1mINSERT INTO "seats" ("name", "updated_at", "flight_id", "baggage", "created_at") VALUES('TESTER 7', '2009-08-22 20:47:41', 1, 0.3, '2009-08-22 20:47:41')[0m
+  [4;35;1mSeat Load (0.9ms)[0m   [0mSELECT * FROM "seats" WHERE ("seats".flight_id = 1) [0m
+Rendered flights/_seat_list (6.1ms)
+Completed in 25ms (View: 17, DB: 2) | 200 OK [http://localhost/seats]
