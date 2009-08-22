@@ -1214,3 +1214,172 @@ Processing AdsController#index (for 127.0.0.1 at 2009-08-21 14:29:19) [GET]
 Rendering template within layouts/ads
 Rendering ads/index
 Completed in 53ms (View: 7, DB: 2) | 200 OK [http://localhost/ads/]
+
+
+Processing AdsController#index (for 127.0.0.1 at 2009-08-22 12:38:26) [GET]
+  [4;36;1mAd Load (19.7ms)[0m   [0;1mSELECT * FROM "ads" [0m
+Rendering template within layouts/ads
+Rendering ads/index
+Completed in 60ms (View: 35, DB: 20) | 200 OK [http://localhost/ads/]
+
+
+Processing ApplicationController#show (for 127.0.0.1 at 2009-08-22 13:00:08) [GET]
+  Parameters: {"id"=>"1"}
+
+SyntaxError (/Users/nathan/web/tutorials/rails/head_first_rails/mebay/app/controllers/ads_controller.rb:47: syntax error, unexpected $end, expecting kEND):
+  
+
+Rendered rescues/_trace (69.2ms)
+Rendered rescues/_request_and_response (1.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-22 13:00:11) [GET]
+
+SyntaxError (/Users/nathan/web/tutorials/rails/head_first_rails/mebay/app/controllers/ads_controller.rb:47: syntax error, unexpected $end, expecting kEND):
+  
+
+Rendered rescues/_trace (29.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AdsController#index (for 127.0.0.1 at 2009-08-22 13:00:23) [GET]
+  [4;35;1mAd Load (1.5ms)[0m   [0mSELECT * FROM "ads" [0m
+Rendering template within layouts/ads
+Rendering ads/index
+Completed in 8ms (View: 3, DB: 1) | 200 OK [http://localhost/ads/]
+
+
+Processing AdsController#show (for 127.0.0.1 at 2009-08-22 13:00:25) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mAd Load (0.4ms)[0m   [0;1mSELECT * FROM "ads" WHERE ("ads"."id" = 1) [0m
+Rendering template within layouts/ads
+Rendering ads/show
+Completed in 38ms (View: 31, DB: 0) | 200 OK [http://localhost/ads/1]
+
+
+Processing AdsController#new (for 127.0.0.1 at 2009-08-22 13:00:32) [GET]
+Rendering template within layouts/ads
+Rendering ads/new
+Completed in 56ms (View: 51, DB: 0) | 200 OK [http://localhost/ads/new]
+
+
+Processing AdsController#new (for 127.0.0.1 at 2009-08-22 13:00:41) [GET]
+Rendering template within layouts/ads
+Rendering ads/new
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/ads/new]
+
+
+Processing AdsController#create (for 127.0.0.1 at 2009-08-22 13:06:24) [POST]
+  Parameters: {"commit"=>"Create", "ad"=>{"name"=>"", "price"=>"", "description"=>"dsadsada", "img_url"=>"", "seller_id"=>"", "email"=>""}, "authenticity_token"=>"dEbTQoZhrZ2jGgw2aA8ZexBehO/SgjPuTywP2lGTC4w="}
+Rendering template within layouts/ads
+Rendering ads/new
+Completed in 67ms (View: 30, DB: 0) | 200 OK [http://localhost/ads/create]
+
+
+Processing AdsController#index (for 127.0.0.1 at 2009-08-22 13:19:51) [GET]
+  [4;35;1mAd Load (1.7ms)[0m   [0mSELECT * FROM "ads" [0m
+Rendering template within layouts/ads
+Rendering ads/index
+Completed in 10ms (View: 4, DB: 2) | 200 OK [http://localhost/ads/]
+
+
+Processing AdsController#show (for 127.0.0.1 at 2009-08-22 13:19:58) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mAd Load (0.5ms)[0m   [0;1mSELECT * FROM "ads" WHERE ("ads"."id" = 1) [0m
+Rendering template within layouts/ads
+Rendering ads/show
+Completed in 11ms (View: 3, DB: 0) | 200 OK [http://localhost/ads/1]
+
+
+Processing AdsController#edit (for 127.0.0.1 at 2009-08-22 13:20:00) [GET]
+  Parameters: {"id"=>"1"}
+Filter chain halted as [:check_logged_in] rendered_or_redirected.
+Completed in 1ms (View: 1, DB: 0) | 401 Unauthorized [http://localhost/ads/1/edit]
+
+
+Processing AdsController#edit (for 127.0.0.1 at 2009-08-22 13:20:10) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mAd Load (0.3ms)[0m   [0mSELECT * FROM "ads" WHERE ("ads"."id" = 1) [0m
+Rendering template within layouts/ads
+Rendering ads/edit
+Completed in 13ms (View: 7, DB: 0) | 200 OK [http://localhost/ads/1/edit]
+
+
+Processing AdsController#update (for 127.0.0.1 at 2009-08-22 13:20:17) [PUT]
+  Parameters: {"commit"=>"Update", "ad"=>{"name"=>"Typewriter", "price"=>"71.95", "description"=>"Old manual typewriter. Many years useful service. Works best with a bottle next to it. TESTING 1-2-3", "img_url"=>"http://homepage.mac.com/david_griffiths/typewriter.png", "seller_id"=>"54", "email"=>"dhammett@email.com"}, "authenticity_token"=>"dEbTQoZhrZ2jGgw2aA8ZexBehO/SgjPuTywP2lGTC4w=", "id"=>"1"}
+Filter chain halted as [:check_logged_in] rendered_or_redirected.
+Completed in 1ms (View: 1, DB: 0) | 401 Unauthorized [http://localhost/ads/1/update]
+
+
+Processing AdsController#update (for 127.0.0.1 at 2009-08-22 13:20:17) [PUT]
+  Parameters: {"commit"=>"Update", "ad"=>{"name"=>"Typewriter", "price"=>"71.95", "description"=>"Old manual typewriter. Many years useful service. Works best with a bottle next to it. TESTING 1-2-3", "img_url"=>"http://homepage.mac.com/david_griffiths/typewriter.png", "seller_id"=>"54", "email"=>"dhammett@email.com"}, "authenticity_token"=>"dEbTQoZhrZ2jGgw2aA8ZexBehO/SgjPuTywP2lGTC4w=", "id"=>"1"}
+  [4;36;1mAd Load (0.3ms)[0m   [0;1mSELECT * FROM "ads" WHERE ("ads"."id" = 1) [0m
+  [4;35;1mAd Update (0.7ms)[0m   [0mUPDATE "ads" SET "description" = 'Old manual typewriter. Many years useful service. Works best with a bottle next to it. TESTING 1-2-3', "updated_at" = '2009-08-22 18:20:17' WHERE "id" = 1[0m
+Redirected to http://localhost:3000/ads/1
+Completed in 48ms (DB: 1) | 302 Found [http://localhost/ads/1/update]
+
+
+Processing AdsController#show (for 127.0.0.1 at 2009-08-22 13:20:17) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mAd Load (0.3ms)[0m   [0;1mSELECT * FROM "ads" WHERE ("ads"."id" = 1) [0m
+Rendering template within layouts/ads
+Rendering ads/show
+Completed in 8ms (View: 2, DB: 0) | 200 OK [http://localhost/ads/1]
+
+
+Processing AdsController#edit (for 127.0.0.1 at 2009-08-22 13:20:20) [GET]
+  Parameters: {"id"=>"1"}
+Filter chain halted as [:check_logged_in] rendered_or_redirected.
+Completed in 1ms (View: 1, DB: 0) | 401 Unauthorized [http://localhost/ads/1/edit]
+
+
+Processing AdsController#edit (for 127.0.0.1 at 2009-08-22 13:20:20) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mAd Load (0.4ms)[0m   [0mSELECT * FROM "ads" WHERE ("ads"."id" = 1) [0m
+Rendering template within layouts/ads
+Rendering ads/edit
+Completed in 11ms (View: 4, DB: 0) | 200 OK [http://localhost/ads/1/edit]
+
+
+Processing AdsController#update (for 127.0.0.1 at 2009-08-22 13:20:27) [PUT]
+  Parameters: {"commit"=>"Update", "ad"=>{"name"=>"", "price"=>"71.95", "description"=>"Old manual typewriter. Many years useful service. Works best with a bottle next to it. TESTING 1-2-3", "img_url"=>"http://homepage.mac.com/david_griffiths/typewriter.png", "seller_id"=>"54", "email"=>"dhammett@email.com"}, "authenticity_token"=>"dEbTQoZhrZ2jGgw2aA8ZexBehO/SgjPuTywP2lGTC4w=", "id"=>"1"}
+Filter chain halted as [:check_logged_in] rendered_or_redirected.
+Completed in 1ms (View: 1, DB: 0) | 401 Unauthorized [http://localhost/ads/1/update]
+
+
+Processing AdsController#update (for 127.0.0.1 at 2009-08-22 13:20:27) [PUT]
+  Parameters: {"commit"=>"Update", "ad"=>{"name"=>"", "price"=>"71.95", "description"=>"Old manual typewriter. Many years useful service. Works best with a bottle next to it. TESTING 1-2-3", "img_url"=>"http://homepage.mac.com/david_griffiths/typewriter.png", "seller_id"=>"54", "email"=>"dhammett@email.com"}, "authenticity_token"=>"dEbTQoZhrZ2jGgw2aA8ZexBehO/SgjPuTywP2lGTC4w=", "id"=>"1"}
+  [4;36;1mAd Load (0.3ms)[0m   [0;1mSELECT * FROM "ads" WHERE ("ads"."id" = 1) [0m
+Rendering template within layouts/ads
+Rendering ads/edit
+Completed in 13ms (View: 3, DB: 0) | 200 OK [http://localhost/ads/1/update]
+
+
+Processing AdsController#update (for 127.0.0.1 at 2009-08-22 13:20:31) [PUT]
+  Parameters: {"commit"=>"Update", "ad"=>{"name"=>"Typewriter", "price"=>"71.95", "description"=>"Old manual typewriter. Many years useful service. Works best with a bottle next to it. TESTING 1-2-3", "img_url"=>"http://homepage.mac.com/david_griffiths/typewriter.png", "seller_id"=>"54", "email"=>"dhammett@email.com"}, "authenticity_token"=>"dEbTQoZhrZ2jGgw2aA8ZexBehO/SgjPuTywP2lGTC4w=", "id"=>"1"}
+Filter chain halted as [:check_logged_in] rendered_or_redirected.
+Completed in 1ms (View: 1, DB: 0) | 401 Unauthorized [http://localhost/ads/1/update]
+
+
+Processing AdsController#update (for 127.0.0.1 at 2009-08-22 13:20:31) [PUT]
+  Parameters: {"commit"=>"Update", "ad"=>{"name"=>"Typewriter", "price"=>"71.95", "description"=>"Old manual typewriter. Many years useful service. Works best with a bottle next to it. TESTING 1-2-3", "img_url"=>"http://homepage.mac.com/david_griffiths/typewriter.png", "seller_id"=>"54", "email"=>"dhammett@email.com"}, "authenticity_token"=>"dEbTQoZhrZ2jGgw2aA8ZexBehO/SgjPuTywP2lGTC4w=", "id"=>"1"}
+  [4;35;1mAd Load (0.5ms)[0m   [0mSELECT * FROM "ads" WHERE ("ads"."id" = 1) [0m
+Redirected to http://localhost:3000/ads/1
+Completed in 58ms (DB: 1) | 302 Found [http://localhost/ads/1/update]
+
+
+Processing AdsController#show (for 127.0.0.1 at 2009-08-22 13:20:31) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mAd Load (0.3ms)[0m   [0;1mSELECT * FROM "ads" WHERE ("ads"."id" = 1) [0m
+Rendering template within layouts/ads
+Rendering ads/show
+Completed in 8ms (View: 2, DB: 0) | 200 OK [http://localhost/ads/1]
+
+
+Processing AdsController#index (for 127.0.0.1 at 2009-08-22 13:20:34) [GET]
+  [4;35;1mAd Load (1.5ms)[0m   [0mSELECT * FROM "ads" [0m
+Rendering template within layouts/ads
+Rendering ads/index
+Completed in 9ms (View: 3, DB: 1) | 200 OK [http://localhost/ads/]

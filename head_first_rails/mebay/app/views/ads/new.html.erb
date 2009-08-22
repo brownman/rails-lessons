@@ -1,4 +1,5 @@
 <% form_for (@ad, :url=>{:action=>'create'}) do |f| -%>
+	<div><%= f.error_messages %></div>
 	<p><b>Name</b><br><%= f.text_field :name %></p>
 	<p><b>Description</b><br><%= f.text_area :description %></p>
 	<p><b>Price</b><br><%= f.text_field :price %></p>

@@ -15,8 +15,11 @@ class AdsController < ApplicationController
   
   def create
     @ad = Ad.new(params[:ad])
-    @ad.save
-    redirect_to "/ads/#{ @ad.id }"
+    if @ad.save
+      redirect_to "/ads/#{ @ad.id }"
+    else
+      render :action => 'new'
+    end
   end
   
   def edit
@@ -25,8 +28,11 @@ class AdsController < ApplicationController
   
   def update
     @ad = Ad.find(params[:id])
-    @ad.update_attributes(params[:ad])
-    redirect_to "/ads/#{ @ad.id }"
+    if @ad.update_attributes(params[:ad])
+      redirect_to "/ads/#{ @ad.id }"
+    else
+      render :action => 'edit'
+    end
   end
   
   def destroy
