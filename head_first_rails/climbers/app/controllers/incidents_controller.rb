@@ -1,17 +1,14 @@
 class IncidentsController < ApplicationController
   
-  def show_with_map
-    @incident = Incident.find(params[:id])
-  end
-  
   # GET /incidents
   # GET /incidents.xml
   def index
     @incidents = Incident.all
-
     respond_to do |format|
       format.html # index.html.erb
-      format.xml  { render :xml => @incidents }
+      format.xml {
+        render :text => @incidents.to_xml(:root => "data")
+      }
     end
   end
 
@@ -19,10 +16,13 @@ class IncidentsController < ApplicationController
   # GET /incidents/1.xml
   def show
     @incident = Incident.find(params[:id])
-
     respond_to do |format|
       format.html # show.html.erb
-      format.xml  { render :xml => @incident }
+      format.xml {
+        render :text => @incident.to_xml(
+          :only => [:latitude, :longitude, :title, :description],
+          :root => "data") 
+      }
     end
   end
 

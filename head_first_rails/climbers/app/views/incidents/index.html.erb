@@ -26,5 +26,5 @@
 </table>
 
 <br />
-
+<%= render (:partial => 'map', :locals => { :data => "/incidents.xml"}) %>
 <%= link_to 'New incident', new_incident_path %>

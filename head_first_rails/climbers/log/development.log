@@ -96,3 +96,426 @@ Rendering template within layouts/incidents
 Rendering incidents/show_with_map
 Rendered incidents/_map (6.4ms)
 Completed in 20ms (View: 15, DB: 0) | 200 OK [http://localhost/incidents/map/1]
+
+
+Processing IncidentsController#show_with_map (for 127.0.0.1 at 2009-08-24 10:26:10) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mIncident Load (0.5ms)[0m   [0;1mSELECT * FROM "incidents" WHERE ("incidents"."id" = 1) [0m
+Rendering template within layouts/incidents
+Rendering incidents/show_with_map
+Rendered incidents/_map (27.7ms)
+Completed in 306ms (View: 282, DB: 0) | 200 OK [http://localhost/incidents/map/1]
+
+
+Processing IncidentsController#show_with_map (for 127.0.0.1 at 2009-08-24 10:29:22) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mIncident Load (0.3ms)[0m   [0mSELECT * FROM "incidents" WHERE ("incidents"."id" = 1) [0m
+Completed in 9ms (View: 1, DB: 0) | 200 OK [http://localhost/incidents/map/1]
+
+
+Processing IncidentsController#show_with_map (for 127.0.0.1 at 2009-08-24 10:29:28) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mIncident Load (0.4ms)[0m   [0;1mSELECT * FROM "incidents" WHERE ("incidents"."id" = 1) [0m
+Completed in 11ms (View: 1, DB: 0) | 200 OK [http://localhost/incidents/map/1]
+
+
+Processing IncidentsController#show_with_map (for 127.0.0.1 at 2009-08-24 10:31:51) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mIncident Load (0.3ms)[0m   [0mSELECT * FROM "incidents" WHERE ("incidents"."id" = 1) [0m
+Completed in 8ms (View: 1, DB: 0) | 200 OK [http://localhost/incidents/map/1]
+
+
+Processing IncidentsController#show_with_map (for 127.0.0.1 at 2009-08-24 10:31:54) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mIncident Load (0.4ms)[0m   [0;1mSELECT * FROM "incidents" WHERE ("incidents"."id" = 1) [0m
+Completed in 13ms (View: 1, DB: 0) | 200 OK [http://localhost/incidents/map/1]
+
+
+Processing IncidentsController#show_with_map to html (for 127.0.0.1 at 2009-08-24 10:50:27) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mIncident Load (0.4ms)[0m   [0mSELECT * FROM "incidents" WHERE ("incidents"."id" = 1) [0m
+Completed in 11ms (View: 1, DB: 0) | 200 OK [http://localhost/incidents/map/1.html]
+
+
+Processing IncidentsController#show_with_map to html (for 127.0.0.1 at 2009-08-24 10:52:18) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mIncident Load (0.4ms)[0m   [0;1mSELECT * FROM "incidents" WHERE ("incidents"."id" = 1) [0m
+Rendering template within layouts/incidents
+Rendering incidents/show_with_map
+Rendered incidents/_map (0.9ms)
+Completed in 14ms (View: 5, DB: 0) | 200 OK [http://localhost/incidents/map/1.html]
+
+
+Processing IncidentsController#show_with_map to html (for 127.0.0.1 at 2009-08-24 10:52:31) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mIncident Load (0.6ms)[0m   [0mSELECT * FROM "incidents" WHERE ("incidents"."id" = 1) [0m
+Rendering template within layouts/incidents
+Rendering incidents/show_with_map
+Rendered incidents/_map (1.0ms)
+Completed in 15ms (View: 6, DB: 1) | 200 OK [http://localhost/incidents/map/1.html]
+
+
+Processing IncidentsController#show_with_map to xml (for 127.0.0.1 at 2009-08-24 10:52:40) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mIncident Load (0.4ms)[0m   [0;1mSELECT * FROM "incidents" WHERE ("incidents"."id" = 1) [0m
+Completed in 12ms (View: 1, DB: 0) | 200 OK [http://localhost/incidents/map/1.xml]
+
+
+Processing IncidentsController#show_with_map to xml (for 127.0.0.1 at 2009-08-24 10:52:44) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mIncident Load (0.5ms)[0m   [0mSELECT * FROM "incidents" WHERE ("incidents"."id" = 1) [0m
+Completed in 13ms (View: 1, DB: 0) | 200 OK [http://localhost/incidents/map/1.xml]
+
+
+Processing IncidentsController#show_with_map to html (for 127.0.0.1 at 2009-08-24 10:52:58) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mIncident Load (0.5ms)[0m   [0;1mSELECT * FROM "incidents" WHERE ("incidents"."id" = 1) [0m
+Rendering template within layouts/incidents
+Rendering incidents/show_with_map
+Rendered incidents/_map (0.6ms)
+Completed in 15ms (View: 6, DB: 0) | 200 OK [http://localhost/incidents/map/1.html]
+
+
+Processing IncidentsController#show_with_map to html (for 127.0.0.1 at 2009-08-24 10:53:13) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mIncident Load (0.5ms)[0m   [0mSELECT * FROM "incidents" WHERE ("incidents"."id" = 1) [0m
+Rendering template within layouts/incidents
+Rendering incidents/show_with_map
+Rendered incidents/_map (0.6ms)
+Completed in 14ms (View: 5, DB: 0) | 200 OK [http://localhost/incidents/map/1.html]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-24 10:53:15) [GET]
+
+ActionController::RoutingError (No route matches "/test.xml" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing IncidentsController#show_with_map to html (for 127.0.0.1 at 2009-08-24 10:53:28) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mIncident Load (0.5ms)[0m   [0;1mSELECT * FROM "incidents" WHERE ("incidents"."id" = 1) [0m
+Rendering template within layouts/incidents
+Rendering incidents/show_with_map
+Rendered incidents/_map (0.6ms)
+Completed in 15ms (View: 5, DB: 0) | 200 OK [http://localhost/incidents/map/1.html]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-24 10:53:29) [GET]
+
+ActionController::RoutingError (No route matches "/test.xml" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing IncidentsController#show_with_map to html (for 127.0.0.1 at 2009-08-24 10:54:08) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mIncident Load (0.6ms)[0m   [0mSELECT * FROM "incidents" WHERE ("incidents"."id" = 1) [0m
+Rendering template within layouts/incidents
+Rendering incidents/show_with_map
+Rendered incidents/_map (0.6ms)
+Completed in 19ms (View: 10, DB: 1) | 200 OK [http://localhost/incidents/map/1.html]
+
+
+Processing IncidentsController#show_with_map to xml (for 127.0.0.1 at 2009-08-24 10:54:09) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mIncident Load (0.7ms)[0m   [0;1mSELECT * FROM "incidents" WHERE ("incidents"."id" = 1) [0m
+Completed in 21ms (View: 1, DB: 1) | 200 OK [http://localhost/incidents/map/1.xml]
+
+
+Processing IncidentsController#show_with_map to xml (for 127.0.0.1 at 2009-08-24 10:54:23) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mIncident Load (0.7ms)[0m   [0mSELECT * FROM "incidents" WHERE ("incidents"."id" = 1) [0m
+Completed in 13ms (View: 1, DB: 1) | 200 OK [http://localhost/incidents/map/1.xml]
+
+
+Processing IncidentsController#show_with_map to xml (for 127.0.0.1 at 2009-08-24 10:54:26) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mIncident Load (0.5ms)[0m   [0;1mSELECT * FROM "incidents" WHERE ("incidents"."id" = 1) [0m
+Completed in 13ms (View: 1, DB: 1) | 200 OK [http://localhost/incidents/map/1.xml]
+
+
+Processing IncidentsController#show_with_map to html (for 127.0.0.1 at 2009-08-24 10:54:34) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mIncident Load (0.5ms)[0m   [0mSELECT * FROM "incidents" WHERE ("incidents"."id" = 1) [0m
+Rendering template within layouts/incidents
+Rendering incidents/show_with_map
+Rendered incidents/_map (0.6ms)
+Completed in 14ms (View: 5, DB: 1) | 200 OK [http://localhost/incidents/map/1.html]
+
+
+Processing IncidentsController#show_with_map to xml (for 127.0.0.1 at 2009-08-24 10:54:35) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mIncident Load (0.6ms)[0m   [0;1mSELECT * FROM "incidents" WHERE ("incidents"."id" = 1) [0m
+Completed in 22ms (View: 1, DB: 1) | 200 OK [http://localhost/incidents/map/1.xml]
+
+
+Processing IncidentsController#map to html (for 127.0.0.1 at 2009-08-24 11:01:09) [GET]
+  Parameters: {"id"=>"1"}
+
+ActionController::UnknownAction (No action responded to map. Actions: create, destroy, edit, index, new, show, and update):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing IncidentsController#map to html (for 127.0.0.1 at 2009-08-24 11:01:11) [GET]
+  Parameters: {"id"=>"1"}
+
+ActionController::UnknownAction (No action responded to map. Actions: create, destroy, edit, index, new, show, and update):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing IncidentsController#index (for 127.0.0.1 at 2009-08-24 11:01:38) [GET]
+  [4;35;1mIncident Load (0.9ms)[0m   [0mSELECT * FROM "incidents" [0m
+Rendering template within layouts/incidents
+Rendering incidents/index
+Completed in 60ms (View: 51, DB: 1) | 200 OK [http://localhost/incidents]
+
+
+Processing IncidentsController#show (for 127.0.0.1 at 2009-08-24 11:01:41) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mIncident Load (0.5ms)[0m   [0;1mSELECT * FROM "incidents" WHERE ("incidents"."id" = 1) [0m
+Rendering template within layouts/incidents
+Rendering incidents/show
+Rendered incidents/_map (1.1ms)
+Completed in 23ms (View: 13, DB: 1) | 200 OK [http://localhost/incidents/1]
+
+
+Processing IncidentsController#show to xml (for 127.0.0.1 at 2009-08-24 11:01:43) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mIncident Load (1.0ms)[0m   [0mSELECT * FROM "incidents" WHERE ("incidents"."id" = 1) [0m
+Completed in 23ms (View: 1, DB: 1) | 200 OK [http://localhost/incidents/1.xml]
+
+
+Processing IncidentsController#index (for 127.0.0.1 at 2009-08-24 11:01:49) [GET]
+  [4;36;1mIncident Load (1.1ms)[0m   [0;1mSELECT * FROM "incidents" [0m
+Rendering template within layouts/incidents
+Rendering incidents/index
+Completed in 20ms (View: 10, DB: 1) | 200 OK [http://localhost/incidents]
+
+
+Processing IncidentsController#new (for 127.0.0.1 at 2009-08-24 11:06:11) [GET]
+Rendering template within layouts/incidents
+Rendering incidents/new
+Completed in 446ms (View: 441, DB: 0) | 200 OK [http://localhost/incidents/new]
+
+
+Processing IncidentsController#create (for 127.0.0.1 at 2009-08-24 11:06:46) [POST]
+  Parameters: {"incident"=>{"latitude"=>"45.0", "title"=>"Saw some chimps", "when(1i)"=>"2009", "when(2i)"=>"8", "when(3i)"=>"24", "description"=>"Saw some chimps on this one.", "when(4i)"=>"16", "mountain"=>"St. Rupert's", "when(5i)"=>"06", "longitude"=>"-70.0"}, "commit"=>"Create", "authenticity_token"=>"EvGZpypQSN0mxsOfkmhHbBb6o2ILlfCXFr9gIxK97Vg="}
+  [4;35;1mIncident Create (23.6ms)[0m   [0mINSERT INTO "incidents" ("latitude", "updated_at", "title", "mountain", "description", "longitude", "when", "created_at") VALUES(45.0, '2009-08-24 16:06:46', 'Saw some chimps', 'St. Rupert''s', 'Saw some chimps on this one.', -70.0, '2009-08-24 16:06:00', '2009-08-24 16:06:46')[0m
+Redirected to http://localhost:3000/incidents/2
+Completed in 44ms (DB: 24) | 302 Found [http://localhost/incidents]
+
+
+Processing IncidentsController#show (for 127.0.0.1 at 2009-08-24 11:06:46) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mIncident Load (0.3ms)[0m   [0;1mSELECT * FROM "incidents" WHERE ("incidents"."id" = 2) [0m
+Rendering template within layouts/incidents
+Rendering incidents/show
+Rendered incidents/_map (0.4ms)
+Completed in 9ms (View: 3, DB: 0) | 200 OK [http://localhost/incidents/2]
+
+
+Processing IncidentsController#show to xml (for 127.0.0.1 at 2009-08-24 11:06:48) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mIncident Load (0.5ms)[0m   [0mSELECT * FROM "incidents" WHERE ("incidents"."id" = 2) [0m
+Completed in 14ms (View: 1, DB: 0) | 200 OK [http://localhost/incidents/2.xml]
+
+
+Processing IncidentsController#edit (for 127.0.0.1 at 2009-08-24 11:06:56) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mIncident Load (0.3ms)[0m   [0;1mSELECT * FROM "incidents" WHERE ("incidents"."id" = 2) [0m
+Rendering template within layouts/incidents
+Rendering incidents/edit
+Completed in 45ms (View: 40, DB: 0) | 200 OK [http://localhost/incidents/2/edit]
+
+
+Processing IncidentsController#update (for 127.0.0.1 at 2009-08-24 11:07:14) [PUT]
+  Parameters: {"incident"=>{"latitude"=>"25", "title"=>"Saw some chimps", "when(1i)"=>"2009", "when(2i)"=>"8", "when(3i)"=>"24", "description"=>"Saw some chimps on this one.", "when(4i)"=>"16", "mountain"=>"St. Rupert's", "when(5i)"=>"06", "longitude"=>"-90"}, "commit"=>"Update", "authenticity_token"=>"EvGZpypQSN0mxsOfkmhHbBb6o2ILlfCXFr9gIxK97Vg=", "id"=>"2"}
+  [4;35;1mIncident Load (0.3ms)[0m   [0mSELECT * FROM "incidents" WHERE ("incidents"."id" = 2) [0m
+  [4;36;1mIncident Update (1.0ms)[0m   [0;1mUPDATE "incidents" SET "latitude" = 25.0, "longitude" = -90.0, "updated_at" = '2009-08-24 16:07:14' WHERE "id" = 2[0m
+Redirected to http://localhost:3000/incidents/2
+Completed in 13ms (DB: 1) | 302 Found [http://localhost/incidents/2]
+
+
+Processing IncidentsController#show (for 127.0.0.1 at 2009-08-24 11:07:14) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mIncident Load (0.3ms)[0m   [0mSELECT * FROM "incidents" WHERE ("incidents"."id" = 2) [0m
+Rendering template within layouts/incidents
+Rendering incidents/show
+Rendered incidents/_map (1.0ms)
+Completed in 10ms (View: 4, DB: 0) | 200 OK [http://localhost/incidents/2]
+
+
+Processing IncidentsController#show to xml (for 127.0.0.1 at 2009-08-24 11:07:15) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mIncident Load (0.3ms)[0m   [0;1mSELECT * FROM "incidents" WHERE ("incidents"."id" = 2) [0m
+Completed in 9ms (View: 1, DB: 0) | 200 OK [http://localhost/incidents/2.xml]
+
+
+Processing IncidentsController#edit (for 127.0.0.1 at 2009-08-24 11:07:27) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mIncident Load (0.3ms)[0m   [0mSELECT * FROM "incidents" WHERE ("incidents"."id" = 2) [0m
+Rendering template within layouts/incidents
+Rendering incidents/edit
+Completed in 15ms (View: 9, DB: 0) | 200 OK [http://localhost/incidents/2/edit]
+
+
+Processing IncidentsController#update (for 127.0.0.1 at 2009-08-24 11:07:34) [PUT]
+  Parameters: {"incident"=>{"latitude"=>"60", "title"=>"Saw some chimps", "when(1i)"=>"2009", "when(2i)"=>"8", "when(3i)"=>"24", "description"=>"Saw some chimps on this one.", "when(4i)"=>"16", "mountain"=>"St. Rupert's", "when(5i)"=>"06", "longitude"=>"-90"}, "commit"=>"Update", "authenticity_token"=>"EvGZpypQSN0mxsOfkmhHbBb6o2ILlfCXFr9gIxK97Vg=", "id"=>"2"}
+  [4;36;1mIncident Load (0.3ms)[0m   [0;1mSELECT * FROM "incidents" WHERE ("incidents"."id" = 2) [0m
+  [4;35;1mIncident Update (0.5ms)[0m   [0mUPDATE "incidents" SET "latitude" = 60.0, "updated_at" = '2009-08-24 16:07:34' WHERE "id" = 2[0m
+Redirected to http://localhost:3000/incidents/2
+Completed in 13ms (DB: 1) | 302 Found [http://localhost/incidents/2]
+
+
+Processing IncidentsController#show (for 127.0.0.1 at 2009-08-24 11:07:34) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mIncident Load (0.5ms)[0m   [0;1mSELECT * FROM "incidents" WHERE ("incidents"."id" = 2) [0m
+Rendering template within layouts/incidents
+Rendering incidents/show
+Rendered incidents/_map (0.4ms)
+Completed in 10ms (View: 3, DB: 0) | 200 OK [http://localhost/incidents/2]
+
+
+Processing IncidentsController#show to xml (for 127.0.0.1 at 2009-08-24 11:07:36) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mIncident Load (0.4ms)[0m   [0mSELECT * FROM "incidents" WHERE ("incidents"."id" = 2) [0m
+Completed in 13ms (View: 1, DB: 0) | 200 OK [http://localhost/incidents/2.xml]
+
+
+Processing IncidentsController#edit (for 127.0.0.1 at 2009-08-24 11:07:46) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mIncident Load (0.3ms)[0m   [0;1mSELECT * FROM "incidents" WHERE ("incidents"."id" = 2) [0m
+Rendering template within layouts/incidents
+Rendering incidents/edit
+Completed in 15ms (View: 10, DB: 0) | 200 OK [http://localhost/incidents/2/edit]
+
+
+Processing IncidentsController#update (for 127.0.0.1 at 2009-08-24 11:07:53) [PUT]
+  Parameters: {"incident"=>{"latitude"=>"90", "title"=>"Saw some chimps", "when(1i)"=>"2009", "when(2i)"=>"8", "when(3i)"=>"24", "description"=>"Saw some chimps on this one.", "when(4i)"=>"16", "mountain"=>"St. Rupert's", "when(5i)"=>"06", "longitude"=>"-90"}, "commit"=>"Update", "authenticity_token"=>"EvGZpypQSN0mxsOfkmhHbBb6o2ILlfCXFr9gIxK97Vg=", "id"=>"2"}
+  [4;35;1mIncident Load (0.4ms)[0m   [0mSELECT * FROM "incidents" WHERE ("incidents"."id" = 2) [0m
+  [4;36;1mIncident Update (0.4ms)[0m   [0;1mUPDATE "incidents" SET "latitude" = 90.0, "updated_at" = '2009-08-24 16:07:53' WHERE "id" = 2[0m
+Redirected to http://localhost:3000/incidents/2
+Completed in 12ms (DB: 1) | 302 Found [http://localhost/incidents/2]
+
+
+Processing IncidentsController#show (for 127.0.0.1 at 2009-08-24 11:07:53) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mIncident Load (0.3ms)[0m   [0mSELECT * FROM "incidents" WHERE ("incidents"."id" = 2) [0m
+Rendering template within layouts/incidents
+Rendering incidents/show
+Rendered incidents/_map (0.4ms)
+Completed in 10ms (View: 4, DB: 0) | 200 OK [http://localhost/incidents/2]
+
+
+Processing IncidentsController#show to xml (for 127.0.0.1 at 2009-08-24 11:07:54) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mIncident Load (0.4ms)[0m   [0;1mSELECT * FROM "incidents" WHERE ("incidents"."id" = 2) [0m
+Completed in 12ms (View: 1, DB: 0) | 200 OK [http://localhost/incidents/2.xml]
+
+
+Processing IncidentsController#edit (for 127.0.0.1 at 2009-08-24 11:08:10) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mIncident Load (0.3ms)[0m   [0mSELECT * FROM "incidents" WHERE ("incidents"."id" = 2) [0m
+Rendering template within layouts/incidents
+Rendering incidents/edit
+Completed in 15ms (View: 10, DB: 0) | 200 OK [http://localhost/incidents/2/edit]
+
+
+Processing IncidentsController#update (for 127.0.0.1 at 2009-08-24 11:08:16) [PUT]
+  Parameters: {"incident"=>{"latitude"=>"75", "title"=>"Saw some chimps", "when(1i)"=>"2009", "when(2i)"=>"8", "when(3i)"=>"24", "description"=>"Saw some chimps on this one.", "when(4i)"=>"16", "mountain"=>"St. Rupert's", "when(5i)"=>"06", "longitude"=>"-90"}, "commit"=>"Update", "authenticity_token"=>"EvGZpypQSN0mxsOfkmhHbBb6o2ILlfCXFr9gIxK97Vg=", "id"=>"2"}
+  [4;36;1mIncident Load (0.4ms)[0m   [0;1mSELECT * FROM "incidents" WHERE ("incidents"."id" = 2) [0m
+  [4;35;1mIncident Update (0.4ms)[0m   [0mUPDATE "incidents" SET "latitude" = 75.0, "updated_at" = '2009-08-24 16:08:16' WHERE "id" = 2[0m
+Redirected to http://localhost:3000/incidents/2
+Completed in 12ms (DB: 1) | 302 Found [http://localhost/incidents/2]
+
+
+Processing IncidentsController#show (for 127.0.0.1 at 2009-08-24 11:08:16) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mIncident Load (0.3ms)[0m   [0;1mSELECT * FROM "incidents" WHERE ("incidents"."id" = 2) [0m
+Rendering template within layouts/incidents
+Rendering incidents/show
+Rendered incidents/_map (0.4ms)
+Completed in 9ms (View: 3, DB: 0) | 200 OK [http://localhost/incidents/2]
+
+
+Processing IncidentsController#show to xml (for 127.0.0.1 at 2009-08-24 11:08:17) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mIncident Load (0.4ms)[0m   [0mSELECT * FROM "incidents" WHERE ("incidents"."id" = 2) [0m
+Completed in 14ms (View: 1, DB: 0) | 200 OK [http://localhost/incidents/2.xml]
+
+
+Processing IncidentsController#index (for 127.0.0.1 at 2009-08-24 11:08:54) [GET]
+  [4;36;1mIncident Load (0.7ms)[0m   [0;1mSELECT * FROM "incidents" [0m
+Rendering template within layouts/incidents
+Rendering incidents/index
+Completed in 10ms (View: 5, DB: 1) | 200 OK [http://localhost/incidents]
+
+
+Processing IncidentsController#show (for 127.0.0.1 at 2009-08-24 11:08:57) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mIncident Load (0.3ms)[0m   [0mSELECT * FROM "incidents" WHERE ("incidents"."id" = 2) [0m
+Rendering template within layouts/incidents
+Rendering incidents/show
+Rendered incidents/_map (0.4ms)
+Completed in 9ms (View: 3, DB: 0) | 200 OK [http://localhost/incidents/2]
+
+
+Processing IncidentsController#show to xml (for 127.0.0.1 at 2009-08-24 11:08:58) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mIncident Load (0.3ms)[0m   [0;1mSELECT * FROM "incidents" WHERE ("incidents"."id" = 2) [0m
+Completed in 10ms (View: 1, DB: 0) | 200 OK [http://localhost/incidents/2.xml]
+
+
+Processing IncidentsController#index (for 127.0.0.1 at 2009-08-24 11:09:01) [GET]
+  [4;35;1mIncident Load (0.8ms)[0m   [0mSELECT * FROM "incidents" [0m
+Rendering template within layouts/incidents
+Rendering incidents/index
+Completed in 76ms (View: 6, DB: 1) | 200 OK [http://localhost/incidents]
+
+
+Processing IncidentsController#index (for 127.0.0.1 at 2009-08-24 11:23:28) [GET]
+  [4;36;1mIncident Load (0.7ms)[0m   [0;1mSELECT * FROM "incidents" [0m
+Rendering template within layouts/incidents
+Rendering incidents/index
+Rendered incidents/_map (0.4ms)
+Completed in 15ms (View: 10, DB: 1) | 200 OK [http://localhost/incidents]
+
+
+Processing IncidentsController#index to xml (for 127.0.0.1 at 2009-08-24 11:23:29) [GET]
+  [4;35;1mIncident Load (0.8ms)[0m   [0mSELECT * FROM "incidents" [0m
+Completed in 20ms (View: 2, DB: 1) | 200 OK [http://localhost/incidents.xml]
+
+
+Processing IncidentsController#show (for 127.0.0.1 at 2009-08-24 11:23:38) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mIncident Load (0.3ms)[0m   [0;1mSELECT * FROM "incidents" WHERE ("incidents"."id" = 1) [0m
+Rendering template within layouts/incidents
+Rendering incidents/show
+Rendered incidents/_map (0.4ms)
+Completed in 9ms (View: 3, DB: 0) | 200 OK [http://localhost/incidents/1]
+
+
+Processing IncidentsController#show to xml (for 127.0.0.1 at 2009-08-24 11:23:39) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mIncident Load (0.3ms)[0m   [0mSELECT * FROM "incidents" WHERE ("incidents"."id" = 1) [0m
+Completed in 11ms (View: 1, DB: 0) | 200 OK [http://localhost/incidents/1.xml]
+
+
+Processing IncidentsController#index (for 127.0.0.1 at 2009-08-24 11:23:42) [GET]
+  [4;36;1mIncident Load (0.7ms)[0m   [0;1mSELECT * FROM "incidents" [0m
+Rendering template within layouts/incidents
+Rendering incidents/index
+Rendered incidents/_map (0.5ms)
+Completed in 10ms (View: 6, DB: 1) | 200 OK [http://localhost/incidents]
+
+
+Processing IncidentsController#index to xml (for 127.0.0.1 at 2009-08-24 11:23:44) [GET]
+  [4;35;1mIncident Load (0.9ms)[0m   [0mSELECT * FROM "incidents" [0m
+Completed in 18ms (View: 2, DB: 1) | 200 OK [http://localhost/incidents.xml]
