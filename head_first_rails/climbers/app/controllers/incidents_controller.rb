@@ -87,4 +87,12 @@ class IncidentsController < ApplicationController
       format.xml  { head :ok }
     end
   end
+  
+  def news
+    @incidents = Incident.all
+    # @incidents = Incident.find(:all, :conditions => ['updated_at > ?', Time.now.yesterday])
+    render :xml => @incidents
+  end
+  
 end
+

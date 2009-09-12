@@ -519,3 +519,364 @@ Completed in 10ms (View: 6, DB: 1) | 200 OK [http://localhost/incidents]
 Processing IncidentsController#index to xml (for 127.0.0.1 at 2009-08-24 11:23:44) [GET]
   [4;35;1mIncident Load (0.9ms)[0m   [0mSELECT * FROM "incidents" [0m
 Completed in 18ms (View: 2, DB: 1) | 200 OK [http://localhost/incidents.xml]
+
+
+Processing IncidentsController#show (for 127.0.0.1 at 2009-08-24 11:50:28) [GET]
+  Parameters: {"id"=>"news"}
+  [4;36;1mIncident Load (0.2ms)[0m   [0;1mSELECT * FROM "incidents" WHERE ("incidents"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Incident with ID=news):
+  app/controllers/incidents_controller.rb:23:in `show'
+
+Rendered rescues/_trace (33.3ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (not_found)
+
+
+Processing IncidentsController#show to xml (for 127.0.0.1 at 2009-08-24 11:50:46) [GET]
+  Parameters: {"id"=>"news"}
+  [4;35;1mIncident Load (0.1ms)[0m   [0mSELECT * FROM "incidents" WHERE ("incidents"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Incident with ID=news):
+  app/controllers/incidents_controller.rb:23:in `show'
+
+Rendered rescues/_trace (98.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+
+
+Processing IncidentsController#show to xml (for 127.0.0.1 at 2009-08-24 11:52:00) [GET]
+  Parameters: {"id"=>"news"}
+  [4;36;1mIncident Load (0.1ms)[0m   [0;1mSELECT * FROM "incidents" WHERE ("incidents"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Incident with ID=news):
+  app/controllers/incidents_controller.rb:23:in `show'
+
+Rendered rescues/_trace (32.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+
+
+Processing IncidentsController#show to xml (for 127.0.0.1 at 2009-08-24 11:52:19) [GET]
+  Parameters: {"id"=>"news"}
+  [4;35;1mIncident Load (0.1ms)[0m   [0mSELECT * FROM "incidents" WHERE ("incidents"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Incident with ID=news):
+  app/controllers/incidents_controller.rb:24:in `show'
+
+Rendered rescues/_trace (34.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+
+
+Processing IncidentsController#show to xml (for 127.0.0.1 at 2009-08-24 11:52:20) [GET]
+  Parameters: {"id"=>"news"}
+  [4;36;1mIncident Load (0.1ms)[0m   [0;1mSELECT * FROM "incidents" WHERE ("incidents"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Incident with ID=news):
+  app/controllers/incidents_controller.rb:24:in `show'
+
+Rendered rescues/_trace (100.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+
+
+Processing IncidentsController#index (for 127.0.0.1 at 2009-08-24 11:52:43) [GET]
+  [4;35;1mIncident Load (0.7ms)[0m   [0mSELECT * FROM "incidents" [0m
+Rendering template within layouts/incidents
+Rendering incidents/index
+Rendered incidents/_map (0.7ms)
+Completed in 12ms (View: 7, DB: 1) | 200 OK [http://localhost/incidents]
+
+
+Processing IncidentsController#index to xml (for 127.0.0.1 at 2009-08-24 11:52:44) [GET]
+  [4;36;1mIncident Load (0.8ms)[0m   [0;1mSELECT * FROM "incidents" [0m
+Completed in 14ms (View: 1, DB: 1) | 200 OK [http://localhost/incidents.xml]
+
+
+Processing IncidentsController#new (for 127.0.0.1 at 2009-08-24 11:52:47) [GET]
+Rendering template within layouts/incidents
+Rendering incidents/new
+Completed in 446ms (View: 441, DB: 0) | 200 OK [http://localhost/incidents/new]
+
+
+Processing IncidentsController#show (for 127.0.0.1 at 2009-08-24 11:52:51) [GET]
+  Parameters: {"id"=>"news"}
+  [4;35;1mIncident Load (0.2ms)[0m   [0mSELECT * FROM "incidents" WHERE ("incidents"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Incident with ID=news):
+  app/controllers/incidents_controller.rb:24:in `show'
+
+Rendered rescues/_trace (32.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+
+
+Processing IncidentsController#show (for 127.0.0.1 at 2009-08-24 11:53:38) [GET]
+  Parameters: {"id"=>"news"}
+  [4;36;1mIncident Load (0.1ms)[0m   [0;1mSELECT * FROM "incidents" WHERE ("incidents"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Incident with ID=news):
+  app/controllers/incidents_controller.rb:24:in `show'
+
+Rendered rescues/_trace (98.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+
+
+Processing IncidentsController#show (for 127.0.0.1 at 2009-08-24 11:53:39) [GET]
+  Parameters: {"id"=>"news"}
+  [4;35;1mIncident Load (0.1ms)[0m   [0mSELECT * FROM "incidents" WHERE ("incidents"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Incident with ID=news):
+  app/controllers/incidents_controller.rb:24:in `show'
+
+Rendered rescues/_trace (32.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+
+
+Processing IncidentsController#show (for 127.0.0.1 at 2009-08-24 11:53:42) [GET]
+  Parameters: {"id"=>"news"}
+  [4;36;1mIncident Load (0.2ms)[0m   [0;1mSELECT * FROM "incidents" WHERE ("incidents"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Incident with ID=news):
+  app/controllers/incidents_controller.rb:24:in `show'
+
+Rendered rescues/_trace (32.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+
+
+Processing IncidentsController#show (for 127.0.0.1 at 2009-08-24 11:54:02) [GET]
+  Parameters: {"id"=>"news"}
+  [4;35;1mIncident Load (0.1ms)[0m   [0mSELECT * FROM "incidents" WHERE ("incidents"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Incident with ID=news):
+  app/controllers/incidents_controller.rb:24:in `show'
+
+Rendered rescues/_trace (101.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+
+
+Processing IncidentsController#show (for 127.0.0.1 at 2009-08-24 11:54:12) [GET]
+  Parameters: {"id"=>"news"}
+  [4;36;1mIncident Load (0.2ms)[0m   [0;1mSELECT * FROM "incidents" WHERE ("incidents"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Incident with ID=news):
+  app/controllers/incidents_controller.rb:24:in `show'
+
+Rendered rescues/_trace (31.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+
+
+Processing IncidentsController#show (for 127.0.0.1 at 2009-08-24 11:56:08) [GET]
+  Parameters: {"id"=>"news"}
+  [4;35;1mIncident Load (0.1ms)[0m   [0mSELECT * FROM "incidents" WHERE ("incidents"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Incident with ID=news):
+  app/controllers/incidents_controller.rb:24:in `show'
+
+Rendered rescues/_trace (32.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+
+
+Processing IncidentsController#show (for 127.0.0.1 at 2009-08-24 11:56:24) [GET]
+  Parameters: {"id"=>"news"}
+Rendering template within layouts/incidents
+Rendering incidents/show
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.mountain) on line #3 of app/views/incidents/show.html.erb:
+1: <p>
+2:   <b>Mountain:</b>
+3:   <%=h @incident.mountain %>
+4: </p>
+5: 
+6: <p>
+
+    app/views/incidents/show.html.erb:3
+
+Rendered rescues/_trace (107.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing IncidentsController#show to xml (for 127.0.0.1 at 2009-08-24 11:56:44) [GET]
+  Parameters: {"id"=>"news"}
+  [4;36;1mIncident Load (0.2ms)[0m   [0;1mSELECT * FROM "incidents" WHERE ("incidents"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Incident with ID=news):
+  app/controllers/incidents_controller.rb:24:in `show'
+
+Rendered rescues/_trace (32.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+
+
+Processing IncidentsController#show to xml (for 127.0.0.1 at 2009-08-24 12:00:14) [GET]
+  Parameters: {"id"=>"news"}
+  [4;35;1mIncident Load (0.1ms)[0m   [0mSELECT * FROM "incidents" WHERE ("incidents"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Incident with ID=news):
+  app/controllers/incidents_controller.rb:24:in `show'
+
+Rendered rescues/_trace (32.2ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (not_found)
+
+
+Processing IncidentsController#show to xml (for 127.0.0.1 at 2009-08-24 12:05:27) [GET]
+  Parameters: {"id"=>"news"}
+  [4;36;1mIncident Load (0.2ms)[0m   [0;1mSELECT * FROM "incidents" WHERE ("incidents"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Incident with ID=news):
+  app/controllers/incidents_controller.rb:24:in `show'
+
+Rendered rescues/_trace (92.0ms)
+Rendered rescues/_request_and_response (1.5ms)
+Rendering rescues/layout (not_found)
+
+
+Processing IncidentsController#show to xml (for 127.0.0.1 at 2009-08-24 12:05:28) [GET]
+  Parameters: {"id"=>"news"}
+  [4;35;1mIncident Load (0.2ms)[0m   [0mSELECT * FROM "incidents" WHERE ("incidents"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Incident with ID=news):
+  app/controllers/incidents_controller.rb:24:in `show'
+
+Rendered rescues/_trace (37.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+
+
+Processing IncidentsController#show to xml (for 127.0.0.1 at 2009-08-24 12:06:06) [GET]
+  Parameters: {"id"=>"news"}
+  [4;36;1mIncident Load (0.2ms)[0m   [0;1mSELECT * FROM "incidents" WHERE ("incidents"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Incident with ID=news):
+  app/controllers/incidents_controller.rb:24:in `show'
+
+Rendered rescues/_trace (37.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+
+
+Processing IncidentsController#show to xml (for 127.0.0.1 at 2009-08-24 12:06:07) [GET]
+  Parameters: {"id"=>"news"}
+  [4;35;1mIncident Load (0.1ms)[0m   [0mSELECT * FROM "incidents" WHERE ("incidents"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Incident with ID=news):
+  app/controllers/incidents_controller.rb:24:in `show'
+
+Rendered rescues/_trace (100.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+
+
+Processing IncidentsController#show to xml (for 127.0.0.1 at 2009-08-24 12:06:50) [GET]
+  Parameters: {"id"=>"news"}
+  [4;36;1mIncident Load (0.1ms)[0m   [0;1mSELECT * FROM "incidents" WHERE ("incidents"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Incident with ID=news):
+  app/controllers/incidents_controller.rb:18:in `show'
+
+Rendered rescues/_trace (34.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+
+
+Processing IncidentsController#show to xml (for 127.0.0.1 at 2009-08-24 12:06:51) [GET]
+  Parameters: {"id"=>"news"}
+  [4;35;1mIncident Load (0.1ms)[0m   [0mSELECT * FROM "incidents" WHERE ("incidents"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Incident with ID=news):
+  app/controllers/incidents_controller.rb:18:in `show'
+
+Rendered rescues/_trace (31.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+
+
+Processing IncidentsController#show to xml (for 127.0.0.1 at 2009-08-24 12:06:52) [GET]
+  Parameters: {"id"=>"news"}
+  [4;36;1mIncident Load (0.1ms)[0m   [0;1mSELECT * FROM "incidents" WHERE ("incidents"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Incident with ID=news):
+  app/controllers/incidents_controller.rb:18:in `show'
+
+Rendered rescues/_trace (101.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+
+
+Processing IncidentsController#show to xml (for 127.0.0.1 at 2009-08-24 12:06:52) [GET]
+  Parameters: {"id"=>"news"}
+  [4;35;1mIncident Load (0.2ms)[0m   [0mSELECT * FROM "incidents" WHERE ("incidents"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Incident with ID=news):
+  app/controllers/incidents_controller.rb:18:in `show'
+
+Rendered rescues/_trace (32.8ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (not_found)
+
+
+Processing IncidentsController#1 to xml (for 127.0.0.1 at 2009-08-24 12:10:51) [GET]
+  Parameters: {"id"=>"news"}
+
+ActionController::UnknownAction (No action responded to 1. Actions: create, destroy, edit, index, new, news, show, and update):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing IncidentsController#show to xml (for 127.0.0.1 at 2009-08-24 12:11:01) [GET]
+  Parameters: {"id"=>"news"}
+  [4;36;1mIncident Load (0.1ms)[0m   [0;1mSELECT * FROM "incidents" WHERE ("incidents"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Incident with ID=news):
+  app/controllers/incidents_controller.rb:18:in `show'
+
+Rendered rescues/_trace (31.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+
+
+Processing IncidentsController#show to xml (for 127.0.0.1 at 2009-08-24 12:11:25) [GET]
+  Parameters: {"id"=>"news"}
+  [4;35;1mIncident Load (0.2ms)[0m   [0mSELECT * FROM "incidents" WHERE ("incidents"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Incident with ID=news):
+  app/controllers/incidents_controller.rb:18:in `show'
+
+Rendered rescues/_trace (32.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+
+
+Processing IncidentsController#show to xml (for 127.0.0.1 at 2009-08-24 12:11:26) [GET]
+  Parameters: {"id"=>"news"}
+  [4;36;1mIncident Load (0.1ms)[0m   [0;1mSELECT * FROM "incidents" WHERE ("incidents"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Incident with ID=news):
+  app/controllers/incidents_controller.rb:18:in `show'
+
+Rendered rescues/_trace (32.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+
+
+Processing IncidentsController#show to xml (for 127.0.0.1 at 2009-08-24 12:11:34) [GET]
+  Parameters: {"id"=>"news"}
+  [4;35;1mIncident Load (0.1ms)[0m   [0mSELECT * FROM "incidents" WHERE ("incidents"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Incident with ID=news):
+  app/controllers/incidents_controller.rb:18:in `show'
+
+Rendered rescues/_trace (31.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
