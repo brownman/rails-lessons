@@ -1,1 +1,1 @@
-Tutorials, examples, and exercises I've worked through while learning Rails. 
+Tutorials, examples, and exercises I've worked through while learning Rails. Includes exercises from Head First Rails and Agile Web Development with Rails.
