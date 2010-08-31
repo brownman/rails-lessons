@@ -1,3 +1,0 @@
-# MyAdmin
-class MyAdmin
-end
