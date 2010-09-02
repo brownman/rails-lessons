@@ -24,8 +24,8 @@ class ProductTest < ActiveSupport::TestCase
     assert product.invalid?
     assert_equal "must be greater than or equal to 0.01", product.errors[:price].join('; ')
     
-    # product.price = 1
-    # assert product.valid?
+    product.price = 1
+    assert product.valid?
   end
   
   def new_product(image_url)
@@ -40,9 +40,9 @@ class ProductTest < ActiveSupport::TestCase
              http://a.b.c/x/y/z/fred.gif }
     bad = %w{ fred.doc fred.gif/more fred.gif.more }
     
-    # ok.each do |name|
-    #   assert new_product(name).valid?, "#{name} shouldn't be invalid"
-    # end
+    ok.each do |name|
+      assert new_product(name).valid?, "#{name} shouldn't be invalid"
+    end
       
     bad.each do |name|
       assert new_product(name).invalid?, "#{name} shouldn't be valid"
@@ -59,10 +59,13 @@ class ProductTest < ActiveSupport::TestCase
   end
   
   test "product title must be at least 10 characters long" do
-    product = Product.new(:title => "Short Title",
+    product = Product.new(:title => "TooShort",
                           :description => "yyy",
                           :price => 1,
                           :image_url => "fred.gif")
     assert !product.save
+    
+    product.title = "Title that is longer than ten characters etc etc"
+    assert product.save
   end
 end
