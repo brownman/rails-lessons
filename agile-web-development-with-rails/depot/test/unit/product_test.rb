@@ -64,6 +64,7 @@ class ProductTest < ActiveSupport::TestCase
                           :price => 1,
                           :image_url => "fred.gif")
     assert !product.save
+    assert_equal "must be at least 10 characters, you fool", product.errors[:title].join('; ')
     
     product.title = "Title that is longer than ten characters etc etc"
     assert product.save
