@@ -25,6 +25,20 @@ class ProductsControllerTest < ActionController::TestCase
     assert_response :success
     assert_not_nil assigns(:products)
   end
+  
+  test "index should contain listing products" do
+    get :index
+    assert_select '#product_list h1', "Listing products"
+  end
+  
+  test "new should contain form fields" do
+    get :new
+    assert_select '#product_title', 1
+    assert_select '#product_description', 1
+    assert_select '#product_image_url', 1
+    assert_select '#product_price', 1
+    assert_select '#product_submit', 1
+  end
 
   test "should get new" do
     get :new
