@@ -13,11 +13,16 @@ class LineItemsController < ApplicationController
   # GET /line_items/1
   # GET /line_items/1.xml
   def show
-    @line_item = LineItem.find(params[:id])
-
-    respond_to do |format|
-      format.html # show.html.erb
-      format.xml  { render :xml => @line_item }
+    begin
+      @line_item = LineItem.find(params[:id])
+    rescue ActiveRecord::RecordNotFound
+      logger.error "Attempt to access invalid line item #{params[:id]}"
+      redirect_to store_url, :notice => 'Invalid line item'
+    else
+      respond_to do |format|
+        format.html # show.html.erb
+        format.xml  { render :xml => @line_item }
+      end
     end
   end
 
@@ -79,7 +84,7 @@ class LineItemsController < ApplicationController
     @line_item.destroy
 
     respond_to do |format|
-      format.html { redirect_to(line_items_url) }
+      format.html { redirect_to(@line_item.cart, :notice => 'Line item deleted') }
       format.xml  { head :ok }
     end
   end

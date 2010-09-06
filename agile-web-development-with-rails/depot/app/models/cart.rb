@@ -9,6 +9,8 @@ class Cart < ActiveRecord::Base
       current_item = LineItem.new(:product_id => product_id)
       line_items << current_item
     end
+    # copy product price into line item's price property
+    current_item.price = current_item.product.price * current_item.quantity
     current_item
   end
   
