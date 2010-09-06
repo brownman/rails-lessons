@@ -4,3 +4,4 @@ doc/api
 doc/app
 *.tmproj
 example-code/
+.DS_Store

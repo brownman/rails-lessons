@@ -4,18 +4,16 @@
 
 <h1>Your Pragmatic Catalog</h1>
 
-<% if @counter > 4 %>
-<h4>You have visited <%= pluralize(@counter, 'time') %></h4>
-<% end -%>
-
 <% @products.each do |product| %>
   <div class="entry">
-    <%= link_to(image_tag(product.image_url), line_items_path(:product_id => product), :method => :post  ) %>
+    <%= image_tag(product.image_url) %>
     <h3><%= product.title %></h3>
     <%=sanitize product.description %>
     <div class="price_line">
       <span class="price"><%= number_to_currency(product.price) %></span>
-			<%= button_to 'Add to Cart', line_items_path(:product_id => product) %>
+<!-- START_HIGHLIGHT -->
+      <%= button_to 'Add to Cart', line_items_path(:product_id => product) %>
+<!-- END_HIGHLIGHT -->
     </div>
   </div>
 <% end %>
