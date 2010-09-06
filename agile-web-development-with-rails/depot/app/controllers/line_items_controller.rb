@@ -85,7 +85,7 @@ class LineItemsController < ApplicationController
     @line_item.destroy
 
     respond_to do |format|
-      format.html { redirect_to(@line_item.cart, :notice => 'Line item deleted') }
+      format.html { redirect_to(store_path, :notice => 'Line item deleted') }
       format.xml  { head :ok }
     end
   end
