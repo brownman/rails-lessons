@@ -17,9 +17,9 @@
   <div id="columns">
     <div id="side">
       <!-- START_HIGHLIGHT -->
-      <div id="cart">
+			<%= hidden_div_if(@cart.line_items.empty?, :id=> "cart") do %>
         <%= render @cart %>
-      </div>
+      <% end -%>
       <!-- END_HIGHLIGHT -->
 
       <a href="http://www....">Home</a><br />
